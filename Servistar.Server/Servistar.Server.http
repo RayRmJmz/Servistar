@@ -1,0 +1,6 @@
+@Servistar.Server_HostAddress = http://localhost:5178
+
+GET {{Servistar.Server_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
