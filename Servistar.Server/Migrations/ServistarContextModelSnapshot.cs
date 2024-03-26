@@ -57,6 +57,18 @@ namespace Servistar.Server.Migrations
                             Id = "1",
                             Name = "Administrador",
                             NormalizedName = "ADMINISTRADOR"
+                        },
+                        new
+                        {
+                            Id = "2",
+                            Name = "Recepcionista",
+                            NormalizedName = "RECEPCIONISTA"
+                        },
+                        new
+                        {
+                            Id = "3",
+                            Name = "Tecnico",
+                            NormalizedName = "TECNICO"
                         });
                 });
 
@@ -246,17 +258,215 @@ namespace Servistar.Server.Migrations
                         {
                             Id = "99999999",
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "15a6ae70-15d8-4fea-8d3e-71f532d253ef",
+                            ConcurrencyStamp = "597aa418-b341-407c-b680-92615751006b",
                             Email = "rayrmjmz@outlook.com",
                             EmailConfirmed = true,
                             LockoutEnabled = false,
                             NormalizedEmail = "RAYRMJMZ@OUTLOOK.COM",
                             NormalizedUserName = "ADMINISTRADOR",
-                            PasswordHash = "AQAAAAIAAYagAAAAEG+7quYr5qyh0+2VJ1CCChxP0Gn0Tgdib2+jbnwqe5yK4Dboy9zFY8JFzKogRBaF2Q==",
+                            PasswordHash = "AQAAAAIAAYagAAAAECQ15yA3ajNX6JYZP1P5ay27FvIOm0UIeo+V3ssMUzvv3OyMnH7L/SVHpZI3KW+lTg==",
                             PhoneNumberConfirmed = false,
-                            SecurityStamp = "6a37cfac-c7fb-4e3a-8ed4-a7efda0fb072",
+                            SecurityStamp = "1c083418-4b78-4983-8b3f-ca424c4dd5d0",
                             TwoFactorEnabled = false,
                             UserName = "administrador"
+                        });
+                });
+
+            modelBuilder.Entity("Servistar.Server.Entities.CustomersAddressEntity", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("Colony")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("CustomerId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("MinicipalityId")
+                        .HasColumnType("int");
+
+                    b.Property<string>("Number")
+                        .IsRequired()
+                        .HasMaxLength(10)
+                        .HasColumnType("nvarchar(10)");
+
+                    b.Property<int>("PostalCode")
+                        .HasColumnType("int");
+
+                    b.Property<bool>("Principal")
+                        .HasColumnType("bit");
+
+                    b.Property<string>("References")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("State")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Street")
+                        .IsRequired()
+                        .HasMaxLength(50)
+                        .HasColumnType("nvarchar(50)");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("CustomerId");
+
+                    b.HasIndex("MinicipalityId");
+
+                    b.ToTable("CustomersAddress");
+                });
+
+            modelBuilder.Entity("Servistar.Server.Entities.CustumersEntity", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<DateTime?>("BirthDate")
+                        .HasColumnType("Date");
+
+                    b.Property<string>("LastName")
+                        .IsRequired()
+                        .HasMaxLength(50)
+                        .HasColumnType("nvarchar(50)");
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasMaxLength(50)
+                        .HasColumnType("nvarchar(50)");
+
+                    b.Property<DateTime?>("RegistrationDate")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("SecondLastName")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("UserId")
+                        .HasColumnType("nvarchar(450)");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("UserId");
+
+                    b.ToTable("Customers");
+                });
+
+            modelBuilder.Entity("Servistar.Server.Entities.CustumersPhoneNumbersEntity", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<int>("CustomerId")
+                        .HasColumnType("int");
+
+                    b.Property<string>("PhoneNumber")
+                        .IsRequired()
+                        .HasMaxLength(13)
+                        .HasColumnType("nvarchar(13)");
+
+                    b.Property<bool>("Principal")
+                        .HasColumnType("bit");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("CustomerId");
+
+                    b.ToTable("CustumersPhoneNumbers");
+                });
+
+            modelBuilder.Entity("Servistar.Server.Entities.MunicipalitiesEntity", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("Key")
+                        .IsRequired()
+                        .HasMaxLength(3)
+                        .HasColumnType("nvarchar(3)");
+
+                    b.Property<string>("Minicipality")
+                        .IsRequired()
+                        .HasMaxLength(50)
+                        .HasColumnType("nvarchar(50)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Municipalities");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 1,
+                            Key = "001",
+                            Minicipality = "Armería"
+                        },
+                        new
+                        {
+                            Id = 2,
+                            Key = "002",
+                            Minicipality = "Colima"
+                        },
+                        new
+                        {
+                            Id = 3,
+                            Key = "003",
+                            Minicipality = "Comala"
+                        },
+                        new
+                        {
+                            Id = 4,
+                            Key = "004",
+                            Minicipality = "Coquimatlán"
+                        },
+                        new
+                        {
+                            Id = 5,
+                            Key = "005",
+                            Minicipality = "Cuauhtémoc"
+                        },
+                        new
+                        {
+                            Id = 6,
+                            Key = "006",
+                            Minicipality = "Ixtlahuacán"
+                        },
+                        new
+                        {
+                            Id = 7,
+                            Key = "007",
+                            Minicipality = "Manzanillo"
+                        },
+                        new
+                        {
+                            Id = 8,
+                            Key = "008",
+                            Minicipality = "Minatitlán"
+                        },
+                        new
+                        {
+                            Id = 9,
+                            Key = "009",
+                            Minicipality = "Tecomán"
+                        },
+                        new
+                        {
+                            Id = 10,
+                            Key = "010",
+                            Minicipality = "Villa de Álvarez"
                         });
                 });
 
@@ -309,6 +519,45 @@ namespace Servistar.Server.Migrations
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
+                });
+
+            modelBuilder.Entity("Servistar.Server.Entities.CustomersAddressEntity", b =>
+                {
+                    b.HasOne("Servistar.Server.Entities.CustumersEntity", "Customer")
+                        .WithMany()
+                        .HasForeignKey("CustomerId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("Servistar.Server.Entities.MunicipalitiesEntity", "Municipalities")
+                        .WithMany()
+                        .HasForeignKey("MinicipalityId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Customer");
+
+                    b.Navigation("Municipalities");
+                });
+
+            modelBuilder.Entity("Servistar.Server.Entities.CustumersEntity", b =>
+                {
+                    b.HasOne("Servistar.Server.Entities.ApplicationUserEntity", "User")
+                        .WithMany()
+                        .HasForeignKey("UserId");
+
+                    b.Navigation("User");
+                });
+
+            modelBuilder.Entity("Servistar.Server.Entities.CustumersPhoneNumbersEntity", b =>
+                {
+                    b.HasOne("Servistar.Server.Entities.CustumersEntity", "Customer")
+                        .WithMany()
+                        .HasForeignKey("CustomerId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Customer");
                 });
 #pragma warning restore 612, 618
         }

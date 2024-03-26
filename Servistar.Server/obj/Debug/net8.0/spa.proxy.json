@@ -3,7 +3,7 @@
 "ServerUrl": "https://localhost:5173",
 "RedirectUrl": "",
 "LaunchCommand": "npm run dev",
-"WorkingDirectory": "C:\\Dev\\Servistar\\Servistar.Server\\..\\servistar.client",
+"WorkingDirectory": "D:\\Dev\\Servistar\\Servistar.Server\\..\\servistar.client",
 "MaxTimeoutInSeconds": "120",
 "KeepRunning": "false"
 }

@@ -1,56 +1,39 @@
-import { useEffect, useState } from 'react';
-import './App.css';
+import { ReactElement } from "react";
+import { useThemeContext } from "./theme/ThemeContextProvider";
+import { Route, Routes } from "react-router-dom";
 
-interface Forecast {
-    date: string;
-    temperatureC: number;
-    temperatureF: number;
-    summary: string;
-}
-
+import { ROUTES } from "./constants";
+import Login from "./pages/login/login";
+import NotFound from "./pages/notFound/NotFound";
+import { useAuthenticationStore } from "./store";
+import { CssBaseline, ThemeProvider } from "@mui/material";
+import Navs from "./components/Navs/Navs";
 function App() {
-    const [forecasts, setForecasts] = useState<Forecast[]>();
+  const { theme } = useThemeContext();
+  const isLoggedIn = useAuthenticationStore((state) => state.isLoggedIn);
 
-    useEffect(() => {
-        populateWeatherData();
-    }, []);
-
-    const contents = forecasts === undefined
-        ? <p><em>Loading... Please refresh once the ASP.NET backend has started. See <a href="https://aka.ms/jspsintegrationreact">https://aka.ms/jspsintegrationreact</a> for more details.</em></p>
-        : <table className="table table-striped" aria-labelledby="tabelLabel">
-            <thead>
-                <tr>
-                    <th>Date</th>
-                    <th>Temp. (C)</th>
-                    <th>Temp. (F)</th>
-                    <th>Summary</th>
-                </tr>
-            </thead>
-            <tbody>
-                {forecasts.map(forecast =>
-                    <tr key={forecast.date}>
-                        <td>{forecast.date}</td>
-                        <td>{forecast.temperatureC}</td>
-                        <td>{forecast.temperatureF}</td>
-                        <td>{forecast.summary}</td>
-                    </tr>
-                )}
-            </tbody>
-        </table>;
-
-    return (
-        <div>
-            <h1 id="tabelLabel">Weather forecast</h1>
-            <p>This component demonstrates fetching data from the server.</p>
-            {contents}
-        </div>
-    );
-
-    async function populateWeatherData() {
-        const response = await fetch('weatherforecast');
-        const data = await response.json();
-        setForecasts(data);
+  const navegacion = (elemento: ReactElement) => {
+    if (isLoggedIn) {
+      return elemento;
+    } else {
+      return <Login />;
     }
+  };
+  return (
+    <ThemeProvider theme={theme}>
+      <CssBaseline />
+      <main className="main-container">
+        <Navs />
+        <div className="route-container">
+          <Routes>
+            <Route path={ROUTES.LOGIN} element={navegacion(<Login />)} />
+
+            <Route path={ROUTES.NOT_FOUND} element={navegacion(<NotFound />)} />
+          </Routes>
+        </div>
+      </main>
+    </ThemeProvider>
+  );
 }
 
 export default App;

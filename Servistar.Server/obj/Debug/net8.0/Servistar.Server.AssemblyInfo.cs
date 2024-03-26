@@ -15,7 +15,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Servistar.Server")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+39d5b740d64240038db90968b7d4a3ddf7d16788")]
 [assembly: System.Reflection.AssemblyProductAttribute("Servistar.Server")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Servistar.Server")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

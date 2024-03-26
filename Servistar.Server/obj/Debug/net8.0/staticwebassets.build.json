@@ -1,13 +1,13 @@
 {
   "Version": 1,
-  "Hash": "ODdwRf7q0yhGMTglfFDV1UpEuhVu1sAX0csn5PkqS0s=",
+  "Hash": "1V9mIkOUZz97QhlXT7vp+eGh01yzZn4PL5IkuRWgn5I=",
   "Source": "Servistar.Server",
   "BasePath": "_content/Servistar.Server",
   "Mode": "Default",
   "ManifestType": "Build",
   "ReferencedProjectsConfiguration": [
     {
-      "Identity": "C:\\Dev\\Servistar\\servistar.client\\servistar.client.esproj",
+      "Identity": "D:\\Dev\\Servistar\\servistar.client\\servistar.client.esproj",
       "Version": 2,
       "Source": "servistar.client",
       "GetPublishAssetsTargets": "GetCurrentProjectPublishStaticWebAssetItems",

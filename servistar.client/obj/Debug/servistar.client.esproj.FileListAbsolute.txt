@@ -1,1 +1,2 @@
 C:\Dev\Servistar\servistar.client\obj\Debug\servistar.client.esproj.CoreCompileInputs.cache
+D:\Dev\Servistar\servistar.client\obj\Debug\servistar.client.esproj.CoreCompileInputs.cache

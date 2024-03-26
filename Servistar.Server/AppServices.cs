@@ -28,6 +28,8 @@ namespace Servistar.Server
 
             services.AddScoped<IAuthenticationService, AuthenticationService>();
             services.AddScoped<ITokenService, TokenService>();
+            services.AddScoped<IMunicipalitiesService, MunicipalitiesService>();
+
 
             services.AddValidatorsFromAssembly(typeof(AppServices).Assembly);
 

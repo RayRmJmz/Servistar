@@ -11,6 +11,12 @@
             <param name="request"></param>
             <returns></returns>
         </member>
+        <member name="M:Servistar.Server.Controllers.MunicipalitiesController.GetAllMunicipalities">
+            <summary>
+            Return all municipalities of Colima
+            </summary>
+            <returns></returns>
+        </member>
         <member name="T:Servistar.Server.Migrations.Initial">
             <inheritdoc />
         </member>
@@ -21,6 +27,18 @@
             <inheritdoc />
         </member>
         <member name="M:Servistar.Server.Migrations.Initial.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="T:Servistar.Server.Migrations.Customer">
+            <inheritdoc />
+        </member>
+        <member name="M:Servistar.Server.Migrations.Customer.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:Servistar.Server.Migrations.Customer.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:Servistar.Server.Migrations.Customer.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)">
             <inheritdoc />
         </member>
     </members>

@@ -5058,11 +5058,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Dev\\Servistar\\Servistar.Server\\Servistar.Server.csproj",
+      "projectUniqueName": "D:\\Dev\\Servistar\\Servistar.Server\\Servistar.Server.csproj",
       "projectName": "Servistar.Server",
-      "projectPath": "C:\\Dev\\Servistar\\Servistar.Server\\Servistar.Server.csproj",
+      "projectPath": "D:\\Dev\\Servistar\\Servistar.Server\\Servistar.Server.csproj",
       "packagesPath": "C:\\Users\\rayrm\\.nuget\\packages\\",
-      "outputPath": "C:\\Dev\\Servistar\\Servistar.Server\\obj\\",
+      "outputPath": "D:\\Dev\\Servistar\\Servistar.Server\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\rayrm\\AppData\\Roaming\\NuGet\\NuGet.Config",

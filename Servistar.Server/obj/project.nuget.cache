@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "TYIJKf2DA8xFGM1/DeroPgJocZ7x6/7mk+QKLWzxde0+Mu2tNTEDu4wM5iLaH/ilwMcZu5OLPTfJo8iHbPFVIw==",
+  "dgSpecHash": "CI1vommvM5UCPQwl+L3Iuts/hRqEbHH5vomP5+wKVFN7/LDQ4YNfrnRp55IKEYFiOcfKUVhJGSzLedi7UO4c3w==",
   "success": true,
-  "projectFilePath": "C:\\Dev\\Servistar\\Servistar.Server\\Servistar.Server.csproj",
+  "projectFilePath": "D:\\Dev\\Servistar\\Servistar.Server\\Servistar.Server.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\rayrm\\.nuget\\packages\\automapper\\12.0.1\\automapper.12.0.1.nupkg.sha512",
     "C:\\Users\\rayrm\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\12.0.1\\automapper.extensions.microsoft.dependencyinjection.12.0.1.nupkg.sha512",
