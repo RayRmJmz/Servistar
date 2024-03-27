@@ -16,11 +16,11 @@ export default function useAuthentication() {
   const [isLoading, setIsLoading] = useState(false);
   const { mutate: login, error } = useMutation({
     mutationFn: authService,
-
+    // change navitation route to redirect home
     onSuccess: (response: IToken) => {
       const { token } = responseLoginAdapter(response);
       setToken(token).then(() => {
-        navigation(ROUTES.NOT_FOUND);
+        navigation(ROUTES.CUSTOMERS);
       });
     },
 

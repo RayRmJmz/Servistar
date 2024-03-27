@@ -258,15 +258,15 @@ namespace Servistar.Server.Migrations
                         {
                             Id = "99999999",
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "597aa418-b341-407c-b680-92615751006b",
+                            ConcurrencyStamp = "b34cb754-0af9-4201-b6da-8c8486485f9c",
                             Email = "rayrmjmz@outlook.com",
                             EmailConfirmed = true,
                             LockoutEnabled = false,
                             NormalizedEmail = "RAYRMJMZ@OUTLOOK.COM",
                             NormalizedUserName = "ADMINISTRADOR",
-                            PasswordHash = "AQAAAAIAAYagAAAAECQ15yA3ajNX6JYZP1P5ay27FvIOm0UIeo+V3ssMUzvv3OyMnH7L/SVHpZI3KW+lTg==",
+                            PasswordHash = "AQAAAAIAAYagAAAAEPpE2Fb4QTQsQnupRPQe4hW6OMJnClPJe7RkaYVNOyo5trCUti3eDBWJXa6ArkKiAg==",
                             PhoneNumberConfirmed = false,
-                            SecurityStamp = "1c083418-4b78-4983-8b3f-ca424c4dd5d0",
+                            SecurityStamp = "8a232f8a-8534-4cc2-b323-621fed69f684",
                             TwoFactorEnabled = false,
                             UserName = "administrador"
                         });
@@ -359,32 +359,6 @@ namespace Servistar.Server.Migrations
                     b.ToTable("Customers");
                 });
 
-            modelBuilder.Entity("Servistar.Server.Entities.CustumersPhoneNumbersEntity", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
-
-                    b.Property<int>("CustomerId")
-                        .HasColumnType("int");
-
-                    b.Property<string>("PhoneNumber")
-                        .IsRequired()
-                        .HasMaxLength(13)
-                        .HasColumnType("nvarchar(13)");
-
-                    b.Property<bool>("Principal")
-                        .HasColumnType("bit");
-
-                    b.HasKey("Id");
-
-                    b.HasIndex("CustomerId");
-
-                    b.ToTable("CustumersPhoneNumbers");
-                });
-
             modelBuilder.Entity("Servistar.Server.Entities.MunicipalitiesEntity", b =>
                 {
                     b.Property<int>("Id")
@@ -468,6 +442,51 @@ namespace Servistar.Server.Migrations
                             Key = "010",
                             Minicipality = "Villa de Álvarez"
                         });
+                });
+
+            modelBuilder.Entity("Servistar.Server.Entities.PhoneBook", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("Discriminator")
+                        .IsRequired()
+                        .HasMaxLength(34)
+                        .HasColumnType("nvarchar(34)");
+
+                    b.Property<string>("PhoneNumber")
+                        .IsRequired()
+                        .HasMaxLength(13)
+                        .HasColumnType("nvarchar(13)");
+
+                    b.Property<bool>("Principal")
+                        .HasColumnType("bit");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("PhoneNumber")
+                        .IsUnique();
+
+                    b.ToTable("PhoneBook");
+
+                    b.HasDiscriminator<string>("Discriminator").HasValue("PhoneBook");
+
+                    b.UseTphMappingStrategy();
+                });
+
+            modelBuilder.Entity("Servistar.Server.Entities.CustumersPhoneNumbersEntity", b =>
+                {
+                    b.HasBaseType("Servistar.Server.Entities.PhoneBook");
+
+                    b.Property<int>("CustomerId")
+                        .HasColumnType("int");
+
+                    b.HasIndex("CustomerId");
+
+                    b.HasDiscriminator().HasValue("CustumersPhoneNumbersEntity");
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<string>", b =>

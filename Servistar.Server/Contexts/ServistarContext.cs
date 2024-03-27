@@ -2,6 +2,7 @@
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 using Servistar.Server.Entities;
+using System.Reflection.Emit;
 
 namespace Servistar.Server.Contexts
 {
@@ -21,6 +22,12 @@ namespace Servistar.Server.Contexts
         protected override void OnModelCreating(ModelBuilder builder)
         {
             base.OnModelCreating(builder);
+
+            builder.Entity<PhoneBook>()
+            .HasIndex(b => b.PhoneNumber)
+            .IsUnique();
+
+
             AddRoles(builder);
             AddAdministrator(builder);
             AddMunicipalities(builder);

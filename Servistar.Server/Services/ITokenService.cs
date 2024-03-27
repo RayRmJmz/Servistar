@@ -1,4 +1,5 @@
-﻿using System.Security.Claims;
+﻿using Servistar.Server.Entities;
+using System.Security.Claims;
 
 namespace Servistar.Server.Services
 {
@@ -6,5 +7,6 @@ namespace Servistar.Server.Services
     {
         string CreateToken(IEnumerable<Claim> claims, string keyProperty, DateTime expireDate);
         string? GetSecretKey(string keyProperty);
+        Task<ApplicationUserEntity> GetUserContextAsync();
     }
 }

@@ -11,6 +11,29 @@
             <param name="request"></param>
             <returns></returns>
         </member>
+        <member name="M:Servistar.Server.Controllers.CustomersController.GetCustomerById(System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Servistar.Server.Controllers.CustomersController.GetPagination(System.Int32,System.Int32,System.String)">
+            <summary>
+            
+            </summary>
+            <param name="page"></param>
+            <param name="take"></param>
+            <param name="term"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Servistar.Server.Controllers.CustomersController.PostCustomer(Servistar.Server.Models.CustomerCreateModel)">
+            <summary>
+            
+            </summary>
+            <param name="requestModel"></param>
+            <returns></returns>
+        </member>
         <member name="M:Servistar.Server.Controllers.MunicipalitiesController.GetAllMunicipalities">
             <summary>
             Return all municipalities of Colima
@@ -39,6 +62,18 @@
             <inheritdoc />
         </member>
         <member name="M:Servistar.Server.Migrations.Customer.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="T:Servistar.Server.Migrations.phone">
+            <inheritdoc />
+        </member>
+        <member name="M:Servistar.Server.Migrations.phone.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:Servistar.Server.Migrations.phone.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:Servistar.Server.Migrations.phone.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)">
             <inheritdoc />
         </member>
     </members>

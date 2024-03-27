@@ -20,5 +20,9 @@ namespace Servistar.Server.Entities
         public DateTime? RegistrationDate { get; set; } = DateTime.Now;
         [ForeignKey("UserId")]
         public virtual ApplicationUserEntity? User { get; set; }
+
+        public virtual IList<CustomersAddressEntity>? Address { get; set; }
+
+        public virtual IList<CustumersPhoneNumbersEntity>? PhoneNumbers { get; set; }
     }
 }

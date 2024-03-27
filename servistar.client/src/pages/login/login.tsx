@@ -1,8 +1,16 @@
-import { Avatar, Box, Container, TextField, Typography } from "@mui/material";
+import {
+  Avatar,
+  Box,
+  Container,
+  IconButton,
+  InputAdornment,
+  TextField,
+  Typography,
+} from "@mui/material";
 import LoadingButton from "@mui/lab/LoadingButton";
 import { ILoginAuth } from "../../models";
 import { authValidationSchema } from "../../utils/validationsSchemas/auth.validation";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import LockPersonIcon from "@mui/icons-material/LockPerson";
 import { SubmitHandler, useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
@@ -12,13 +20,14 @@ import { requestLoginAdapter } from "../../adapters";
 import { LABELS, ROUTES } from "../../constants";
 import LoginIcon from "@mui/icons-material/Login";
 import theme from "../../theme/theme";
-
+import { Visibility, VisibilityOff } from "@mui/icons-material";
 import { useAuthenticationStore } from "../../store";
 import { useNavigate } from "react-router-dom";
 
 export default function Login() {
   const { login, error: errorLogin, isLoading } = useAuthentication();
   const isLoggedIn = useAuthenticationStore((state) => state.isLoggedIn);
+  const [showPassword, setShowPassword] = useState<boolean>(false);
   const navigate = useNavigate();
   const { ErrorAlert, setError } = useError();
   const initialValues: ILoginAuth = {
@@ -117,11 +126,23 @@ export default function Login() {
               id="password"
               label="Contraseña"
               variant="outlined"
-              type="password"
+              type={showPassword ? "text" : "password"}
               {...register("password")}
               error={!!errors.password}
               helperText={errors.password?.message}
               disabled={isLoading}
+              InputProps={{
+                endAdornment: (
+                  <InputAdornment position="end">
+                    <IconButton
+                      edge="end"
+                      onClick={() => setShowPassword(!showPassword)}
+                    >
+                      {showPassword ? <Visibility /> : <VisibilityOff />}
+                    </IconButton>
+                  </InputAdornment>
+                ),
+              }}
             />
             <LoadingButton
               type="submit"

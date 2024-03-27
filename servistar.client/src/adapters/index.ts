@@ -1,2 +1,3 @@
 export * from "./requestLogin.adapter";
 export * from "./credentials.adapter";
+export * from "./customers/customerPaginationAdapters";

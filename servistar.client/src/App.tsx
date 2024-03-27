@@ -8,6 +8,7 @@ import NotFound from "./pages/notFound/NotFound";
 import { useAuthenticationStore } from "./store";
 import { CssBaseline, ThemeProvider } from "@mui/material";
 import Navs from "./components/Navs/Navs";
+import Customers from "./pages/customers/Customers";
 function App() {
   const { theme } = useThemeContext();
   const isLoggedIn = useAuthenticationStore((state) => state.isLoggedIn);
@@ -27,7 +28,10 @@ function App() {
         <div className="route-container">
           <Routes>
             <Route path={ROUTES.LOGIN} element={navegacion(<Login />)} />
-
+            <Route
+              path={ROUTES.CUSTOMERS}
+              element={navegacion(<Customers />)}
+            />
             <Route path={ROUTES.NOT_FOUND} element={navegacion(<NotFound />)} />
           </Routes>
         </div>

@@ -27,7 +27,7 @@ export default function NotFound() {
         variant="contained"
         size="large"
         sx={{ marginTop: "15px" }}
-        onClick={() => navigate(ROUTES.NOT_FOUND)}
+        onClick={() => navigate(ROUTES.HOME)}
       >
         Ir inicio
       </Button>

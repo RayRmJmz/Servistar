@@ -5,6 +5,7 @@ using Servistar.Server.Entities;
 using Servistar.Server.Models.Sources;
 using System.IdentityModel.Tokens.Jwt;
 using System.Reflection;
+using System.Security.Authentication;
 using System.Security.Claims;
 using System.Text;
 
@@ -12,11 +13,12 @@ namespace Servistar.Server.Services.Implementations
 {
     public class TokenService(
        UserManager<ApplicationUserEntity> userManager,
+        IHttpContextAccessor httpContextAccessor,
        IOptions<AppSettings> appSettings) : ITokenService
     {
         private readonly UserManager<ApplicationUserEntity> _userManager = userManager;
         private readonly AppSettings _appSettings = appSettings.Value;
-
+        private readonly IHttpContextAccessor _httpContextAccessor = httpContextAccessor;
         public string CreateToken(IEnumerable<Claim> claims, string keyProperty, DateTime expireDate)
         {
             var tokenHandler = new JwtSecurityTokenHandler();
@@ -49,6 +51,18 @@ namespace Servistar.Server.Services.Implementations
             }
 
             return property.GetValue(_appSettings)?.ToString();
+        }
+
+        public async Task<ApplicationUserEntity> GetUserContextAsync()
+        {
+            var user = await _userManager.GetUserAsync(_httpContextAccessor.HttpContext.User);
+
+            if (user == null)
+            {
+                throw new InvalidCredentialException($"Error en httpContext");
+            }
+
+            return user;
         }
     }
 }

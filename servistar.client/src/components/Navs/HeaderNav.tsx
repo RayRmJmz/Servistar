@@ -1,6 +1,13 @@
-import { AppBar, Box, Button, IconButton, Toolbar } from "@mui/material";
+import {
+  AppBar,
+  Box,
+  Button,
+  IconButton,
+  Toolbar,
+  Typography,
+} from "@mui/material";
 import { useEffect, useState } from "react";
-import { LABELS } from "../../constants";
+import { INC_COLORS, LABELS } from "../../constants";
 import Brightness4Icon from "@mui/icons-material/Brightness4";
 import Brightness7Icon from "@mui/icons-material/Brightness7";
 import { useNavStore, useThemeStore } from "../../store";
@@ -28,7 +35,7 @@ function HeaderNav() {
           position="static"
           elevation={0}
           sx={{
-            bgcolor: "rgba(62, 83, 100, .9)",
+            bgcolor: INC_COLORS.blue,
           }}
         >
           <Toolbar sx={{ justifyContent: "space-between" }}>
@@ -48,6 +55,9 @@ function HeaderNav() {
                 alt="Logo Peña colorada"
                 style={{ height: "50px", marginTop: "5px" }}
               /> */}
+              <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
+                Servistar
+              </Typography>
             </Box>
 
             <MuiTooltip
