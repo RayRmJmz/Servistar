@@ -22,9 +22,9 @@
             <summary>
             
             </summary>
-            <param name="page"></param>
-            <param name="take"></param>
-            <param name="term"></param>
+            <param name="page">aa</param>
+            <param name="take">bb</param>
+            <param name="term">cc</param>
             <returns></returns>
         </member>
         <member name="M:Servistar.Server.Controllers.CustomersController.PostCustomer(Servistar.Server.Models.CustomerCreateModel)">
@@ -32,6 +32,13 @@
             
             </summary>
             <param name="requestModel"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Servistar.Server.Controllers.CustomersController.PutCustomerIsActive(System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="id"></param>
             <returns></returns>
         </member>
         <member name="M:Servistar.Server.Controllers.MunicipalitiesController.GetAllMunicipalities">
@@ -74,6 +81,18 @@
             <inheritdoc />
         </member>
         <member name="M:Servistar.Server.Migrations.phone.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="T:Servistar.Server.Migrations.CustomerUpdate">
+            <inheritdoc />
+        </member>
+        <member name="M:Servistar.Server.Migrations.CustomerUpdate.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:Servistar.Server.Migrations.CustomerUpdate.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:Servistar.Server.Migrations.CustomerUpdate.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)">
             <inheritdoc />
         </member>
     </members>

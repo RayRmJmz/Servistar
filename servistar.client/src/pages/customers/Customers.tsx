@@ -6,7 +6,7 @@ import {
   IconButton,
   Typography,
 } from "@mui/material";
-import { LABELS } from "../../constants";
+import { LABELS, customerResponseDefaultValues } from "../../constants";
 import MuiTooltip from "../../components/MuiTooltip/MuiTooltip";
 import PersonAddIcon from "@mui/icons-material/PersonAdd";
 import { useCallback, useState } from "react";
@@ -18,15 +18,22 @@ import {
   GridSortDirection,
   GridSortModel,
 } from "@mui/x-data-grid";
-import DeleteIcon from "@mui/icons-material/Delete";
 import useCustomerPagination from "../../hooks/customers/useCustomersPagination";
 import { customersPaginationAdapter } from "../../adapters";
 import NoRows from "../../components/Grid/NoRows";
 import SkeletonGrid from "../../components/Grid/SkeletonGrid";
 import CustomSearchToolbar from "../../components/Grid/CustomSearchToolbar";
-
+import AddEditCustomerModal from "../../components/Customers/AddEditCustomerModal";
+import PersonOffIcon from "@mui/icons-material/PersonOff";
+import DeActivateCustomerModal from "../../components/Customers/DeActivateCuscomerModal";
+import { ICustomerResponse } from "../../models";
+import PersonIcon from "@mui/icons-material/Person";
 export default function Customers() {
-  //const [openModal, setOpenModal] = useState<boolean>(false);
+  const [addEditModal, setAddEditModal] = useState<boolean>(false);
+  const [deactivateModal, setDeactivateModal] = useState<boolean>(false);
+  const [customerData, setCustomerData] = useState<ICustomerResponse>(
+    customerResponseDefaultValues
+  );
   const [pagination, setPagination] = useState<GridPaginationModel>({
     page: 0,
     pageSize: 30,
@@ -61,7 +68,7 @@ export default function Customers() {
   const {
     data: customers,
     isLoading,
-    // refetch,
+    refetch,
   } = useCustomerPagination(
     pagination.page,
     pagination.pageSize,
@@ -75,6 +82,12 @@ export default function Customers() {
     : { customers: [], total: 0 };
 
   const dataColumns: GridColDef[] = [
+    {
+      field: "id",
+      headerName: "Id",
+      minWidth: 50,
+      flex: 1,
+    },
     {
       field: "name",
       headerName: "Nombre",
@@ -95,8 +108,8 @@ export default function Customers() {
       flex: 1,
     },
     {
-      field: "user",
-      headerName: "Actualizado por",
+      field: "status",
+      headerName: "Estatus",
       minWidth: 100,
       hideSortIcons: true,
       sortable: false,
@@ -107,16 +120,19 @@ export default function Customers() {
       headerName: "",
 
       renderCell: (params) => (
-        <MuiTooltip messageTooltip={`Eliminar`}>
+        <MuiTooltip
+          messageTooltip={
+            params.row.isActive ? LABELS.DEACTIVATE : LABELS.ACTIVATE
+          }
+        >
           <IconButton
-            aria-label="delete"
+            aria-label="deactivate"
             onClick={() => {
-              console.log(params);
-              //setFileId(params.row);
-              //setOpenDeleteModal(true);
+              setCustomerData(params.row);
+              setDeactivateModal(true);
             }}
           >
-            <DeleteIcon />
+            {params.row.isActive ? <PersonOffIcon /> : <PersonIcon />}
           </IconButton>
         </MuiTooltip>
       ),
@@ -154,7 +170,7 @@ export default function Customers() {
             <Button
               variant="contained"
               startIcon={<PersonAddIcon />}
-              // onClick={() => setOpenModal(true)}
+              onClick={() => setAddEditModal(true)}
             >
               {LABELS.ADD}
             </Button>
@@ -212,6 +228,19 @@ export default function Customers() {
           />
         </Grid>
       </Card>
+
+      <AddEditCustomerModal
+        openModal={addEditModal}
+        setOpenModal={setAddEditModal}
+        onSuccess={refetch}
+      />
+
+      <DeActivateCustomerModal
+        openModal={deactivateModal}
+        setOpenModal={setDeactivateModal}
+        refetch={refetch}
+        customer={customerData}
+      />
     </Container>
   );
 }

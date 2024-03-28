@@ -1,5 +1,5 @@
 import {
-  ICustomer,
+  ICustomerResponse,
   ICustomersPaginationGrid,
   ICustomersPaginationResponse,
 } from "../../models";
@@ -17,7 +17,8 @@ export const customersPaginationAdapter = ({
       registrationDate,
       userId,
       birthDate,
-    }: ICustomer) => ({
+      isActive,
+    }: ICustomerResponse) => ({
       id,
       name,
       lastName,
@@ -25,6 +26,8 @@ export const customersPaginationAdapter = ({
       registrationDate,
       userId,
       birthDate,
+      isActive: isActive,
+      status: isActive ? "Activo" : "Inactivo",
     })
   ),
   total: total || 100,

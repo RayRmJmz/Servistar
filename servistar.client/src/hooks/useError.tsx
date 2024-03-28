@@ -22,7 +22,6 @@ export default function useError() {
               <CloseIcon fontSize="inherit" />
             </IconButton>
           }
-          sx={{ mb: 2 }}
         >
           {error}
         </Alert>

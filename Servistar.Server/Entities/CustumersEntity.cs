@@ -14,6 +14,7 @@ namespace Servistar.Server.Entities
         [StringLength(50)]
         public string LastName { get; set; }
         public string? SecondLastName { get; set; }
+        public bool IsActive { get; set; } = true;
         public string? UserId { get; set; }
         [Column(TypeName = "Date")]
         public DateTime? BirthDate { get; set; }

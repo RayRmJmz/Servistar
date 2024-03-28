@@ -26,7 +26,7 @@ namespace Servistar.Server.Contexts
             builder.Entity<PhoneBook>()
             .HasIndex(b => b.PhoneNumber)
             .IsUnique();
-
+            builder.Entity<CustumersEntity>().Property(b => b.IsActive).HasDefaultValue(true);
 
             AddRoles(builder);
             AddAdministrator(builder);

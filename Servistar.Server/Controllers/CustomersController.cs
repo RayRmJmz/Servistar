@@ -33,9 +33,9 @@ namespace Servistar.Server.Controllers
         /// <summary>
         /// 
         /// </summary>
-        /// <param name="page"></param>
-        /// <param name="take"></param>
-        /// <param name="term"></param>
+        /// <param name="page">aa</param>
+        /// <param name="take">bb</param>
+        /// <param name="term">cc</param>
         /// <returns></returns>
         [HttpGet("pagination/{page}/{take}")]
         [ProducesResponseType(typeof(PaginationResponseModel<CustomerResponseModel>), 200)]
@@ -58,6 +58,19 @@ namespace Servistar.Server.Controllers
         public async Task<IActionResult> PostCustomer(CustomerCreateModel requestModel)
         {
             return StatusCode(201, await _service.PostCustomerAsync(requestModel));
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="id"></param>
+        /// <returns></returns>
+        [HttpDelete("{id}")]
+        [ProducesResponseType(200)]
+        public async Task<IActionResult> PutCustomerIsActive(int id)
+        {
+            await _service.PutCustomerIsActiveByIdAsync(id);
+            return Ok();
         }
     }
 }

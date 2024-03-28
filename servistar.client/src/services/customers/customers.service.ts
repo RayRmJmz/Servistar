@@ -1,5 +1,5 @@
 import { API_SERVICES } from "../../constants";
-import { Pagination } from "../../models";
+import { ICustomerRequest, Pagination } from "../../models";
 import http from "../../utils/http/http";
 
 export const getCustomersPaginationService = async (pagination: Pagination) => {
@@ -13,5 +13,14 @@ export const getCustomersPaginationService = async (pagination: Pagination) => {
       },
     }
   );
+  return response?.data;
+};
+export const postCustomerService = async (request: ICustomerRequest) => {
+  const response = await http.post(`${API_SERVICES.CUSTOMERS}`, request);
+  return response?.data;
+};
+
+export const deactivateCustomerService = async (customerId: number) => {
+  const response = await http.delete(`${API_SERVICES.CUSTOMERS}/${customerId}`);
   return response?.data;
 };

@@ -15,8 +15,8 @@ namespace Servistar.Server.Models
         [Column(TypeName = "Date")]
         public DateTime? BirthDate { get; set; }
 
-        public IEnumerable<CustomerAddressCreateModel> Address { get; set; }
-        public IEnumerable<CustomersPhoneNumbersCreateModel> PhoneNumbers { get; set; }
+        public IEnumerable<CustomerAddressCreateModel>? Address { get; set; }
+        public IEnumerable<CustomersPhoneNumbersCreateModel>? PhoneNumbers { get; set; }
     }
 
     public class CustomerResponseModel
@@ -28,12 +28,14 @@ namespace Servistar.Server.Models
         [StringLength(50)]
         public string LastName { get; set; }
         public string? SecondLastName { get; set; }
+
+        public bool IsActive { get; set; }
         [Column(TypeName = "Date")]
         public string? BirthDate { get; set; }
         public string? UserId { get; set; }
         public DateTime? RegistrationDate { get; set; }
 
-        public IEnumerable<CustomerAddressResponseModel> Address { get; set; }
-        public IEnumerable<CustomersPhoneNumbersResponseModel> PhoneNumbers { get; set; }
+        public IEnumerable<CustomerAddressResponseModel>? Address { get; set; }
+        public IEnumerable<CustomersPhoneNumbersResponseModel>? PhoneNumbers { get; set; }
     }
 }

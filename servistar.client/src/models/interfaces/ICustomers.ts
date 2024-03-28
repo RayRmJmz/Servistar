@@ -1,4 +1,4 @@
-export interface ICustomer {
+export interface ICustomerResponse {
   id: number;
   name: string;
   lastName: string;
@@ -6,14 +6,25 @@ export interface ICustomer {
   birthDate: string;
   userId: string;
   registrationDate: string;
+  isActive: boolean;
+  status?: string;
 }
 
+
+
 export interface ICustomersPaginationResponse {
-  results: ICustomer[];
+  results: ICustomerResponse[];
   total: number;
 }
 
 export interface ICustomersPaginationGrid {
-  customers: ICustomer[];
+  customers: ICustomerResponse[];
   total?: number;
+}
+
+export interface ICustomerRequest {
+  name: string;
+  lastName: string;
+  secondLastName: string;
+  // birthDate: string;
 }

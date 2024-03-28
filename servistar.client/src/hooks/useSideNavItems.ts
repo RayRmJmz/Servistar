@@ -1,29 +1,19 @@
-import AccountTreeIcon from "@mui/icons-material/AccountTree";
-import BusinessIcon from "@mui/icons-material/Business";
-import BusinessCenterIcon from "@mui/icons-material/BusinessCenter";
-import ContactsIcon from "@mui/icons-material/Contacts";
-import EmailIcon from "@mui/icons-material/Email";
 import GroupsIcon from "@mui/icons-material/Groups";
 import HomeIcon from "@mui/icons-material/Home";
-import ReceiptIcon from "@mui/icons-material/Receipt";
-import SettingsIcon from "@mui/icons-material/Settings";
-import SocialDistanceIcon from "@mui/icons-material/SocialDistance";
 import LibraryBooksIcon from "@mui/icons-material/LibraryBooks";
-import StarIcon from "@mui/icons-material/Star";
-
 import { ROLES, ROUTES, LABELS } from "../constants";
-import { replacePathParams } from "../utils";
+import ConstructionIcon from "@mui/icons-material/Construction";
 import { SidenavItem } from "../models";
 import useCredentials from "./useCredentials";
-
+import SupportAgentIcon from "@mui/icons-material/SupportAgent";
 export default function useSideNavItems() {
-  const { id, roles, isRootUser } = useCredentials();
-
+  const { roles } = useCredentials();
+  /*
   const getAssistantRequestPath = replacePathParams(
     ROUTES.TEST,
     ":idUser",
     `${id}`
-  );
+  );*/
 
   const items: SidenavItem[] = [
     {
@@ -43,92 +33,21 @@ export default function useSideNavItems() {
       roles: [ROLES.ADMI, ROLES.ADMI],
     },
     {
-      label: `${LABELS.CANCEL}`,
+      label: LABELS.SERVICES,
       path: ROUTES.TEST,
-      icon: StarIcon,
-      noView: false,
-      subItems: [],
-      roles: [ROLES.ADMI, ROLES.ADMI],
-    },
-    {
-      label: "Catálogos",
-      path: "#",
-      icon: ReceiptIcon,
-      noView: true,
-      subItems: [
-        {
-          label: "Códigos SAT",
-          path: ROUTES.TEST,
-          icon: BusinessCenterIcon,
-        },
-        {
-          label: "Empresas Emisoras",
-          path: ROUTES.TEST,
-          icon: BusinessIcon,
-        },
-      ],
-      roles: [ROLES.ADMI, ROLES.ADMI],
-    },
-    {
-      label: "Comisión Servicios",
-      path: ROUTES.TEST,
-      icon: SettingsIcon,
+      icon: ConstructionIcon,
       noView: false,
       subItems: [],
       roles: [ROLES.ADMI, ROLES.ADMI],
     },
 
-    // {
-    // 	label: 'Notificaciones',
-    // 	path: '#',
-    // 	icon: NotificationsIcon,
-    // 	noView: false,
-    // 	subItems: [],
-    // 	roles: [...Object.values(ROLES)],
-    // 	badge: {
-    // 		content: 1,
-    // 		color: 'error',
-    // 	},
-    // },
     {
-      label: "Preferencias",
+      label: "Recepcionistas",
       path: ROUTES.TEST,
-      icon: EmailIcon,
+      icon: SupportAgentIcon,
       noView: false,
       subItems: [],
       roles: [ROLES.ADMI, ROLES.ADMI],
-    },
-    {
-      label: "Mis Solicitudes",
-      path: ROUTES.TEST,
-      icon: LibraryBooksIcon,
-      noView: false,
-      subItems: [],
-      roles: [ROLES.ADMI],
-    },
-    {
-      label: "Solicitantes",
-      path: `/applicants/${id}`,
-      icon: ContactsIcon,
-      noView: false,
-      subItems: [],
-      roles: [ROLES.ADMI],
-    },
-    {
-      label: `${LABELS.CANCEL}`,
-      path: `/assignable-individuals-for-transfers/${id}`,
-      icon: SocialDistanceIcon,
-      noView: false,
-      subItems: [],
-      roles: [ROLES.ADMI],
-    },
-    {
-      label: `${LABELS.CANCEL}`,
-      path: getAssistantRequestPath,
-      icon: AccountTreeIcon,
-      noView: false,
-      subItems: [],
-      roles: isRootUser ? [ROLES.ADMI] : [],
     },
   ];
 

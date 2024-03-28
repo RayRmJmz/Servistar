@@ -60,6 +60,25 @@ namespace Servistar.Server.Services.Implementations
             }
         }
 
+
+        public async Task PutCustomerIsActiveByIdAsync(int customerId)
+        {
+            try
+            {
+                var customer = await _dbContext.Customers.FindAsync(customerId);
+                if(customer == null)
+                {
+                    throw new NullReferenceException($"No se encontró cliente {customerId}.");
+                }
+                customer.IsActive = !customer.IsActive;
+                await _dbContext.SaveChangesAsync();
+            }
+            catch (NullReferenceException exception)
+            {
+                throw new NullReferenceException(exception.Message);
+            }
+        }
+
         public async Task<PaginationResponseModel<CustomerResponseModel>> GetCustomersPaginationAsync(
             int page,
             int take,

@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Servistar.Server.Contexts;
 
@@ -11,9 +12,11 @@ using Servistar.Server.Contexts;
 namespace Servistar.Server.Migrations
 {
     [DbContext(typeof(ServistarContext))]
-    partial class ServistarContextModelSnapshot : ModelSnapshot
+    [Migration("20240328043427_CustomerUpdate")]
+    partial class CustomerUpdate
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
