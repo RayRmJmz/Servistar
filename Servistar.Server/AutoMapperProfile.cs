@@ -10,9 +10,21 @@ namespace Servistar.Server
         public AutoMapperProfile()
         {
             SetMunicipalitiesMappings();
+            SetAppliancesMappings();
             SetCustomersMappings();
+            SetBrandsMappings();
         }
 
+        private void SetBrandsMappings()
+        {
+            CreateMap<BrandsEntity, BrandsRequestModel>().ReverseMap();
+            CreateMap<BrandsEntity, BrandsResponseModel>().ReverseMap();
+        }
+        private void SetAppliancesMappings()
+        {
+            CreateMap<AppliancesEntity, ApplianceRequestModel>().ReverseMap();
+            CreateMap<AppliancesEntity, ApplianceResponseModel>().ReverseMap();
+        }
         private void SetMunicipalitiesMappings()
         {
             CreateMap<MunicipalitiesEntity, MinicipalitiesModel>().ReverseMap();

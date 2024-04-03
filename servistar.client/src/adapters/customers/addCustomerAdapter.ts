@@ -4,10 +4,12 @@ export const addCustomerAdapter = ({
   name,
   lastName,
   secondLastName,
-}: // birthDate,
-ICustomerRequest): ICustomerRequest => ({
+  phoneNumbers,
+}: ICustomerRequest): ICustomerRequest => ({
   name,
   lastName,
   secondLastName,
-  // birthDate,
+  phoneNumbers: phoneNumbers.map((number) => ({
+    phoneNumber: number.phoneNumber,
+  })),
 });

@@ -7,6 +7,9 @@ export * from "./interfaces/ISideNav.items";
 export * from "./interfaces/ICredentials";
 export * from "./interfaces/ICredentialsToken";
 export * from "./interfaces/IPagination";
-
+export * from "./interfaces/IAddress";
 export * from "./interfaces/ICustomers";
+export * from "./interfaces/IPhoneBook";
+export * from "./interfaces/IAppliance";
+export * from "./interfaces/IBrands";
 //      export * from "";

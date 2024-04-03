@@ -189,6 +189,26 @@ namespace Servistar.Server.Migrations
                     b.ToTable("AspNetUserTokens", (string)null);
                 });
 
+            modelBuilder.Entity("Servistar.Server.Entities.AppliancesEntity", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("Appliance")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(450)");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("Appliance")
+                        .IsUnique();
+
+                    b.ToTable("Appliances");
+                });
+
             modelBuilder.Entity("Servistar.Server.Entities.ApplicationUserEntity", b =>
                 {
                     b.Property<string>("Id")
@@ -258,18 +278,38 @@ namespace Servistar.Server.Migrations
                         {
                             Id = "99999999",
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "2a846ee8-9394-42f3-9c8f-8491a6453c5b",
+                            ConcurrencyStamp = "955c58d8-a2bf-481e-b5cd-70abee9f9cec",
                             Email = "rayrmjmz@outlook.com",
                             EmailConfirmed = true,
                             LockoutEnabled = false,
                             NormalizedEmail = "RAYRMJMZ@OUTLOOK.COM",
                             NormalizedUserName = "ADMINISTRADOR",
-                            PasswordHash = "AQAAAAIAAYagAAAAEIi2w9l4ppV2VLoToQJWGE8KZnAsy7A0P5j7fL0vBZRyLQXi7wkz5nNh7n3bFu1oEQ==",
+                            PasswordHash = "AQAAAAIAAYagAAAAEAruxuQR3Al0gMquO3m4Y5VMtD5rmSWL2snKk5qnzL4vQAC7t8QOWzz5ELQacqMrpg==",
                             PhoneNumberConfirmed = false,
-                            SecurityStamp = "f9408fb2-fd59-4dfd-81b2-82533b41571e",
+                            SecurityStamp = "9ec2679e-2ef4-407d-a0ea-ecda4cd57a87",
                             TwoFactorEnabled = false,
                             UserName = "administrador"
                         });
+                });
+
+            modelBuilder.Entity("Servistar.Server.Entities.BrandsEntity", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("Brand")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(450)");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("Brand")
+                        .IsUnique();
+
+                    b.ToTable("Brands");
                 });
 
             modelBuilder.Entity("Servistar.Server.Entities.CustomersAddressEntity", b =>

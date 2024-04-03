@@ -1,14 +1,7 @@
-import {
-  Button,
-  Card,
-  Container,
-  Grid,
-  IconButton,
-  Typography,
-} from "@mui/material";
+import { Button, Card, Container, Grid, IconButton } from "@mui/material";
 import { LABELS, customerResponseDefaultValues } from "../../constants";
 import MuiTooltip from "../../components/MuiTooltip/MuiTooltip";
-import PersonAddIcon from "@mui/icons-material/PersonAdd";
+import AddCircleIcon from "@mui/icons-material/AddCircle";
 import { useCallback, useState } from "react";
 import {
   DataGrid,
@@ -28,9 +21,14 @@ import PersonOffIcon from "@mui/icons-material/PersonOff";
 import DeActivateCustomerModal from "../../components/Customers/DeActivateCuscomerModal";
 import { ICustomerResponse } from "../../models";
 import PersonIcon from "@mui/icons-material/Person";
+import { FormProviderCreateCustomer } from "../test/testConfig";
+import RemoveRedEyeIcon from "@mui/icons-material/RemoveRedEye";
+import CustomerDetailModal from "../../components/Customers/CustomerDetailModal";
+import MuiTitle from "../../components/Basics/MuiTitle";
 export default function Customers() {
   const [addEditModal, setAddEditModal] = useState<boolean>(false);
   const [deactivateModal, setDeactivateModal] = useState<boolean>(false);
+  const [openDetailModal, setOpenDetailModal] = useState<boolean>(false);
   const [customerData, setCustomerData] = useState<ICustomerResponse>(
     customerResponseDefaultValues
   );
@@ -120,21 +118,34 @@ export default function Customers() {
       headerName: "",
 
       renderCell: (params) => (
-        <MuiTooltip
-          messageTooltip={
-            params.row.isActive ? LABELS.DEACTIVATE : LABELS.ACTIVATE
-          }
-        >
-          <IconButton
-            aria-label="deactivate"
-            onClick={() => {
-              setCustomerData(params.row);
-              setDeactivateModal(true);
-            }}
+        <>
+          <MuiTooltip messageTooltip={LABELS.SEE_DETAIL}>
+            <IconButton
+              aria-label="deactivate"
+              onClick={() => {
+                setCustomerData(params.row);
+                setOpenDetailModal(true);
+              }}
+            >
+              <RemoveRedEyeIcon />
+            </IconButton>
+          </MuiTooltip>
+          <MuiTooltip
+            messageTooltip={
+              params.row.isActive ? LABELS.DEACTIVATE : LABELS.ACTIVATE
+            }
           >
-            {params.row.isActive ? <PersonOffIcon /> : <PersonIcon />}
-          </IconButton>
-        </MuiTooltip>
+            <IconButton
+              aria-label="deactivate"
+              onClick={() => {
+                setCustomerData(params.row);
+                setDeactivateModal(true);
+              }}
+            >
+              {params.row.isActive ? <PersonOffIcon /> : <PersonIcon />}
+            </IconButton>
+          </MuiTooltip>
+        </>
       ),
 
       hideSortIcons: true,
@@ -149,9 +160,7 @@ export default function Customers() {
         sx={{ marginTop: "5px", alignItems: "center" }}
       >
         <Grid item container xs={8} sm={6} md={4} lg={3} xl={3}>
-          <Typography component="h1" variant="h4">
-            {LABELS.CUSTOMERS}
-          </Typography>
+          <MuiTitle title={LABELS.CUSTOMERS} />
         </Grid>
         <Grid
           item
@@ -169,7 +178,7 @@ export default function Customers() {
           <MuiTooltip messageTooltip={`${LABELS.ADD} ${LABELS.CUSTOMER}`}>
             <Button
               variant="contained"
-              startIcon={<PersonAddIcon />}
+              startIcon={<AddCircleIcon />}
               onClick={() => setAddEditModal(true)}
             >
               {LABELS.ADD}
@@ -228,17 +237,23 @@ export default function Customers() {
           />
         </Grid>
       </Card>
-
-      <AddEditCustomerModal
-        openModal={addEditModal}
-        setOpenModal={setAddEditModal}
-        onSuccess={refetch}
-      />
-
+      <FormProviderCreateCustomer>
+        <AddEditCustomerModal
+          openModal={addEditModal}
+          setOpenModal={setAddEditModal}
+          onSuccess={refetch}
+        />
+      </FormProviderCreateCustomer>
       <DeActivateCustomerModal
         openModal={deactivateModal}
         setOpenModal={setDeactivateModal}
         refetch={refetch}
+        customer={customerData}
+      />
+
+      <CustomerDetailModal
+        openModal={openDetailModal}
+        setOpenModal={setOpenDetailModal}
         customer={customerData}
       />
     </Container>

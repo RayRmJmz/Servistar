@@ -4,4 +4,6 @@ export const enum ROUTES {
   HOME = "/home",
   TEST = "/test",
   CUSTOMERS = "/customers",
+  BRANDS = "/brands",
+  APPLIENCES = "/appliances",
 }

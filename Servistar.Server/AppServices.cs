@@ -30,7 +30,7 @@ namespace Servistar.Server
             services.AddScoped<ITokenService, TokenService>();
             services.AddScoped<IMunicipalitiesService, MunicipalitiesService>();
             services.AddScoped<ICustomersService, CustomersService>();
-            
+            services.AddScoped<IApplianceService, ApplianceService>();
 
             services.AddValidatorsFromAssembly(typeof(AppServices).Assembly);
 

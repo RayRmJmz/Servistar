@@ -18,6 +18,8 @@ export const customersPaginationAdapter = ({
       userId,
       birthDate,
       isActive,
+      phoneNumbers,
+      address,
     }: ICustomerResponse) => ({
       id,
       name,
@@ -28,6 +30,8 @@ export const customersPaginationAdapter = ({
       birthDate,
       isActive: isActive,
       status: isActive ? "Activo" : "Inactivo",
+      phoneNumbers,
+      address,
     })
   ),
   total: total || 100,

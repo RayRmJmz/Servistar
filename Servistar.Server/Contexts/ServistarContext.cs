@@ -26,6 +26,12 @@ namespace Servistar.Server.Contexts
             builder.Entity<PhoneBook>()
             .HasIndex(b => b.PhoneNumber)
             .IsUnique();
+            builder.Entity<AppliancesEntity>()
+            .HasIndex(b => b.Appliance)
+            .IsUnique();
+            builder.Entity<BrandsEntity>()
+            .HasIndex(b => b.Brand)
+            .IsUnique();
             builder.Entity<CustumersEntity>().Property(b => b.IsActive).HasDefaultValue(true);
 
             AddRoles(builder);
@@ -83,6 +89,8 @@ namespace Servistar.Server.Contexts
         public DbSet<CustumersPhoneNumbersEntity> CustumersPhoneNumbers => Set<CustumersPhoneNumbersEntity>();
         public DbSet<CustumersEntity> Customers => Set<CustumersEntity>();
         public DbSet<MunicipalitiesEntity> Municipalities => Set<MunicipalitiesEntity>();
+        public DbSet<AppliancesEntity> Appliances => Set<AppliancesEntity>();
+        public DbSet<BrandsEntity> Brands => Set<BrandsEntity>();
         #endregion
     }
 }

@@ -1,3 +1,6 @@
+import { IAddress } from "./IAddress";
+import { IPhoneBookRequest, IPhoneBookResponse } from "./IPhoneBook";
+
 export interface ICustomerResponse {
   id: number;
   name: string;
@@ -8,9 +11,22 @@ export interface ICustomerResponse {
   registrationDate: string;
   isActive: boolean;
   status?: string;
+  phoneNumbers: IPhoneBookResponse[];
+  address: IAddress;
 }
 
-
+export interface ICustomerResponseSingle {
+  id: number;
+  name: string;
+  lastName: string;
+  secondLastName: string;
+  birthDate: string;
+  userId: string;
+  registrationDate: string;
+  isActive: boolean;
+  status?: string;
+  phoneNumbers: IPhoneBookResponse[];
+}
 
 export interface ICustomersPaginationResponse {
   results: ICustomerResponse[];
@@ -26,5 +42,5 @@ export interface ICustomerRequest {
   name: string;
   lastName: string;
   secondLastName: string;
-  // birthDate: string;
+  phoneNumbers: Array<IPhoneBookRequest>;
 }

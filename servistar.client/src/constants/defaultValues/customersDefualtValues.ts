@@ -1,10 +1,12 @@
 import { ICustomerRequest, ICustomerResponse } from "../../models";
 
 export const customerReqDefaultValues: ICustomerRequest = {
-  name: "",
+  name: "Ra",
   lastName: "",
   secondLastName: "",
+  phoneNumbers: [],
 };
+
 export const customerResponseDefaultValues: ICustomerResponse = {
   id: 0,
   name: "",

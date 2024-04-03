@@ -16,6 +16,7 @@ export const getCustomersPaginationService = async (pagination: Pagination) => {
   return response?.data;
 };
 export const postCustomerService = async (request: ICustomerRequest) => {
+  console.log("add customer  ", request);
   const response = await http.post(`${API_SERVICES.CUSTOMERS}`, request);
   return response?.data;
 };

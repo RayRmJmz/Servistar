@@ -9,6 +9,8 @@ import { useAuthenticationStore } from "./store";
 import { CssBaseline, ThemeProvider } from "@mui/material";
 import Navs from "./components/Navs/Navs";
 import Customers from "./pages/customers/Customers";
+import TesttingForm from "./pages/test/TesttingForm";
+import Appliances from "./pages/catalogues/Appliances";
 function App() {
   const { theme } = useThemeContext();
   const isLoggedIn = useAuthenticationStore((state) => state.isLoggedIn);
@@ -32,6 +34,11 @@ function App() {
               path={ROUTES.CUSTOMERS}
               element={navegacion(<Customers />)}
             />
+            <Route
+              path={ROUTES.APPLIENCES}
+              element={navegacion(<Appliances />)}
+            />
+            <Route path={ROUTES.TEST} element={navegacion(<TesttingForm />)} />
             <Route path={ROUTES.NOT_FOUND} element={navegacion(<NotFound />)} />
           </Routes>
         </div>

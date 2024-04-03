@@ -3,64 +3,92 @@
   "WorkspaceRootPath": "D:\\Dev\\Servistar\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{44603228-5E77-4417-A61B-F771322E0695}|Servistar.Server\\Servistar.Server.csproj|d:\\dev\\servistar\\servistar.server\\controllers\\appliancescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{44603228-5E77-4417-A61B-F771322E0695}|Servistar.Server\\Servistar.Server.csproj|solutionrelative:servistar.server\\controllers\\appliancescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{44603228-5E77-4417-A61B-F771322E0695}|Servistar.Server\\Servistar.Server.csproj|d:\\dev\\servistar\\servistar.server\\controllers\\customerscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{44603228-5E77-4417-A61B-F771322E0695}|Servistar.Server\\Servistar.Server.csproj|solutionrelative:servistar.server\\controllers\\customerscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{44603228-5E77-4417-A61B-F771322E0695}|Servistar.Server\\Servistar.Server.csproj|d:\\dev\\servistar\\servistar.server\\services\\icustomersservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{44603228-5E77-4417-A61B-F771322E0695}|Servistar.Server\\Servistar.Server.csproj|solutionrelative:servistar.server\\services\\icustomersservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{44603228-5E77-4417-A61B-F771322E0695}|Servistar.Server\\Servistar.Server.csproj|d:\\dev\\servistar\\servistar.server\\services\\implementations\\customersservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{44603228-5E77-4417-A61B-F771322E0695}|Servistar.Server\\Servistar.Server.csproj|solutionrelative:servistar.server\\services\\implementations\\customersservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Dev\\Servistar\\Servistar.Server\\Migrations\\20240328043427_CustomerUpdate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Servistar.Server\\Migrations\\20240328043427_CustomerUpdate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{44603228-5E77-4417-A61B-F771322E0695}|Servistar.Server\\Servistar.Server.csproj|d:\\dev\\servistar\\servistar.server\\contexts\\servistarcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{44603228-5E77-4417-A61B-F771322E0695}|Servistar.Server\\Servistar.Server.csproj|solutionrelative:servistar.server\\contexts\\servistarcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{44603228-5E77-4417-A61B-F771322E0695}|Servistar.Server\\Servistar.Server.csproj|d:\\dev\\servistar\\servistar.server\\models\\customermodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{44603228-5E77-4417-A61B-F771322E0695}|Servistar.Server\\Servistar.Server.csproj|solutionrelative:servistar.server\\models\\customermodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{44603228-5E77-4417-A61B-F771322E0695}|Servistar.Server\\Servistar.Server.csproj|d:\\dev\\servistar\\servistar.server\\automapperprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{44603228-5E77-4417-A61B-F771322E0695}|Servistar.Server\\Servistar.Server.csproj|solutionrelative:servistar.server\\automapperprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{44603228-5E77-4417-A61B-F771322E0695}|Servistar.Server\\Servistar.Server.csproj|d:\\dev\\servistar\\servistar.server\\entities\\custumersentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{44603228-5E77-4417-A61B-F771322E0695}|Servistar.Server\\Servistar.Server.csproj|solutionrelative:servistar.server\\entities\\custumersentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{44603228-5E77-4417-A61B-F771322E0695}|Servistar.Server\\Servistar.Server.csproj|d:\\dev\\servistar\\servistar.server\\controllers\\municipalitiescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{44603228-5E77-4417-A61B-F771322E0695}|Servistar.Server\\Servistar.Server.csproj|solutionrelative:servistar.server\\controllers\\municipalitiescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{44603228-5E77-4417-A61B-F771322E0695}|Servistar.Server\\Servistar.Server.csproj|d:\\dev\\servistar\\servistar.server\\appservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{44603228-5E77-4417-A61B-F771322E0695}|Servistar.Server\\Servistar.Server.csproj|solutionrelative:servistar.server\\appservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{44603228-5E77-4417-A61B-F771322E0695}|Servistar.Server\\Servistar.Server.csproj|d:\\dev\\servistar\\servistar.server\\services\\iapplianceservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{44603228-5E77-4417-A61B-F771322E0695}|Servistar.Server\\Servistar.Server.csproj|solutionrelative:servistar.server\\services\\iapplianceservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{44603228-5E77-4417-A61B-F771322E0695}|Servistar.Server\\Servistar.Server.csproj|d:\\dev\\servistar\\servistar.server\\services\\implementations\\municipalitiesservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{44603228-5E77-4417-A61B-F771322E0695}|Servistar.Server\\Servistar.Server.csproj|solutionrelative:servistar.server\\services\\implementations\\municipalitiesservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{44603228-5E77-4417-A61B-F771322E0695}|Servistar.Server\\Servistar.Server.csproj|d:\\dev\\servistar\\servistar.server\\models\\cataloguemodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{44603228-5E77-4417-A61B-F771322E0695}|Servistar.Server\\Servistar.Server.csproj|solutionrelative:servistar.server\\models\\cataloguemodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{44603228-5E77-4417-A61B-F771322E0695}|Servistar.Server\\Servistar.Server.csproj|d:\\dev\\servistar\\servistar.server\\services\\implementations\\applianceservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{44603228-5E77-4417-A61B-F771322E0695}|Servistar.Server\\Servistar.Server.csproj|solutionrelative:servistar.server\\services\\implementations\\applianceservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{44603228-5E77-4417-A61B-F771322E0695}|Servistar.Server\\Servistar.Server.csproj|d:\\dev\\servistar\\servistar.server\\controllers\\authenticationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{44603228-5E77-4417-A61B-F771322E0695}|Servistar.Server\\Servistar.Server.csproj|solutionrelative:servistar.server\\controllers\\authenticationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{44603228-5E77-4417-A61B-F771322E0695}|Servistar.Server\\Servistar.Server.csproj|d:\\dev\\servistar\\servistar.server\\services\\implementations\\checkpaginationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{44603228-5E77-4417-A61B-F771322E0695}|Servistar.Server\\Servistar.Server.csproj|solutionrelative:servistar.server\\services\\implementations\\checkpaginationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{44603228-5E77-4417-A61B-F771322E0695}|Servistar.Server\\Servistar.Server.csproj|d:\\dev\\servistar\\servistar.server\\services\\implementations\\customersservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{44603228-5E77-4417-A61B-F771322E0695}|Servistar.Server\\Servistar.Server.csproj|solutionrelative:servistar.server\\services\\implementations\\customersservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{44603228-5E77-4417-A61B-F771322E0695}|Servistar.Server\\Servistar.Server.csproj|d:\\dev\\servistar\\servistar.server\\services\\implementations\\municipalitiesservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{44603228-5E77-4417-A61B-F771322E0695}|Servistar.Server\\Servistar.Server.csproj|solutionrelative:servistar.server\\services\\implementations\\municipalitiesservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{44603228-5E77-4417-A61B-F771322E0695}|Servistar.Server\\Servistar.Server.csproj|d:\\dev\\servistar\\servistar.server\\automapperprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{44603228-5E77-4417-A61B-F771322E0695}|Servistar.Server\\Servistar.Server.csproj|solutionrelative:servistar.server\\automapperprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{44603228-5E77-4417-A61B-F771322E0695}|Servistar.Server\\Servistar.Server.csproj|d:\\dev\\servistar\\servistar.server\\appservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{44603228-5E77-4417-A61B-F771322E0695}|Servistar.Server\\Servistar.Server.csproj|solutionrelative:servistar.server\\appservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{44603228-5E77-4417-A61B-F771322E0695}|Servistar.Server\\Servistar.Server.csproj|d:\\dev\\servistar\\servistar.server\\contexts\\servistarcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{44603228-5E77-4417-A61B-F771322E0695}|Servistar.Server\\Servistar.Server.csproj|solutionrelative:servistar.server\\contexts\\servistarcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{44603228-5E77-4417-A61B-F771322E0695}|Servistar.Server\\Servistar.Server.csproj|d:\\dev\\servistar\\servistar.server\\entities\\appliancesentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{44603228-5E77-4417-A61B-F771322E0695}|Servistar.Server\\Servistar.Server.csproj|solutionrelative:servistar.server\\entities\\appliancesentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{44603228-5E77-4417-A61B-F771322E0695}|Servistar.Server\\Servistar.Server.csproj|d:\\dev\\servistar\\servistar.server\\entities\\brandsentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{44603228-5E77-4417-A61B-F771322E0695}|Servistar.Server\\Servistar.Server.csproj|solutionrelative:servistar.server\\entities\\brandsentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{44603228-5E77-4417-A61B-F771322E0695}|Servistar.Server\\Servistar.Server.csproj|d:\\dev\\servistar\\servistar.server\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{44603228-5E77-4417-A61B-F771322E0695}|Servistar.Server\\Servistar.Server.csproj|solutionrelative:servistar.server\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{44603228-5E77-4417-A61B-F771322E0695}|Servistar.Server\\Servistar.Server.csproj|d:\\dev\\servistar\\servistar.server\\services\\implementations\\authenticationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{44603228-5E77-4417-A61B-F771322E0695}|Servistar.Server\\Servistar.Server.csproj|solutionrelative:servistar.server\\services\\implementations\\authenticationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{44603228-5E77-4417-A61B-F771322E0695}|Servistar.Server\\Servistar.Server.csproj|d:\\dev\\servistar\\servistar.server\\models\\customeraddressmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{44603228-5E77-4417-A61B-F771322E0695}|Servistar.Server\\Servistar.Server.csproj|solutionrelative:servistar.server\\models\\customeraddressmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{44603228-5E77-4417-A61B-F771322E0695}|Servistar.Server\\Servistar.Server.csproj|d:\\dev\\servistar\\servistar.server\\controllers\\authenticationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{44603228-5E77-4417-A61B-F771322E0695}|Servistar.Server\\Servistar.Server.csproj|solutionrelative:servistar.server\\controllers\\authenticationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{44603228-5E77-4417-A61B-F771322E0695}|Servistar.Server\\Servistar.Server.csproj|d:\\dev\\servistar\\servistar.server\\entities\\custumersentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{44603228-5E77-4417-A61B-F771322E0695}|Servistar.Server\\Servistar.Server.csproj|solutionrelative:servistar.server\\entities\\custumersentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{44603228-5E77-4417-A61B-F771322E0695}|Servistar.Server\\Servistar.Server.csproj|d:\\dev\\servistar\\servistar.server\\models\\customermodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{44603228-5E77-4417-A61B-F771322E0695}|Servistar.Server\\Servistar.Server.csproj|solutionrelative:servistar.server\\models\\customermodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{44603228-5E77-4417-A61B-F771322E0695}|Servistar.Server\\Servistar.Server.csproj|d:\\dev\\servistar\\servistar.server\\services\\icustomersservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{44603228-5E77-4417-A61B-F771322E0695}|Servistar.Server\\Servistar.Server.csproj|solutionrelative:servistar.server\\services\\icustomersservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{44603228-5E77-4417-A61B-F771322E0695}|Servistar.Server\\Servistar.Server.csproj|d:\\dev\\servistar\\servistar.server\\migrations\\20240328043427_customerupdate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{44603228-5E77-4417-A61B-F771322E0695}|Servistar.Server\\Servistar.Server.csproj|solutionrelative:servistar.server\\migrations\\20240328043427_customerupdate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{44603228-5E77-4417-A61B-F771322E0695}|Servistar.Server\\Servistar.Server.csproj|d:\\dev\\servistar\\servistar.server\\services\\implementations\\authenticationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{44603228-5E77-4417-A61B-F771322E0695}|Servistar.Server\\Servistar.Server.csproj|solutionrelative:servistar.server\\services\\implementations\\authenticationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{44603228-5E77-4417-A61B-F771322E0695}|Servistar.Server\\Servistar.Server.csproj|d:\\dev\\servistar\\servistar.server\\models\\customersphonenumbersmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -85,10 +113,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{44603228-5E77-4417-A61B-F771322E0695}|Servistar.Server\\Servistar.Server.csproj|d:\\dev\\servistar\\servistar.server\\models\\sources\\paginationresponsemodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{44603228-5E77-4417-A61B-F771322E0695}|Servistar.Server\\Servistar.Server.csproj|solutionrelative:servistar.server\\models\\sources\\paginationresponsemodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{44603228-5E77-4417-A61B-F771322E0695}|Servistar.Server\\Servistar.Server.csproj|d:\\dev\\servistar\\servistar.server\\models\\customeraddressmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{44603228-5E77-4417-A61B-F771322E0695}|Servistar.Server\\Servistar.Server.csproj|solutionrelative:servistar.server\\models\\customeraddressmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{44603228-5E77-4417-A61B-F771322E0695}|Servistar.Server\\Servistar.Server.csproj|d:\\dev\\servistar\\servistar.server\\entities\\phonebook.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -133,6 +157,10 @@
     {
       "AbsoluteMoniker": "D:0:0:{44603228-5E77-4417-A61B-F771322E0695}|Servistar.Server\\Servistar.Server.csproj|d:\\dev\\servistar\\servistar.server\\migrations\\20240322014947_initial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{44603228-5E77-4417-A61B-F771322E0695}|Servistar.Server\\Servistar.Server.csproj|solutionrelative:servistar.server\\migrations\\20240322014947_initial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{44603228-5E77-4417-A61B-F771322E0695}|Servistar.Server\\Servistar.Server.csproj|d:\\dev\\servistar\\servistar.server\\migrations\\20240402013155_brands.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{44603228-5E77-4417-A61B-F771322E0695}|Servistar.Server\\Servistar.Server.csproj|solutionrelative:servistar.server\\migrations\\20240402013155_brands.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -142,127 +170,75 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "20240328043427_CustomerUpdate.cs",
-              "DocumentMoniker": "D:\\Dev\\Servistar\\Servistar.Server\\Migrations\\20240328043427_CustomerUpdate.cs",
-              "RelativeDocumentMoniker": "Servistar.Server\\Migrations\\20240328043427_CustomerUpdate.cs",
-              "ToolTip": "D:\\Dev\\Servistar\\Servistar.Server\\Migrations\\20240328043427_CustomerUpdate.cs",
-              "RelativeToolTip": "Servistar.Server\\Migrations\\20240328043427_CustomerUpdate.cs",
-              "ViewState": "AQIAACoAAAAAAAAAAAAYwAAAAAAAAAAA",
+              "DocumentIndex": 0,
+              "Title": "AppliancesController.cs",
+              "DocumentMoniker": "D:\\Dev\\Servistar\\Servistar.Server\\Controllers\\AppliancesController.cs",
+              "RelativeDocumentMoniker": "Servistar.Server\\Controllers\\AppliancesController.cs",
+              "ToolTip": "D:\\Dev\\Servistar\\Servistar.Server\\Controllers\\AppliancesController.cs",
+              "RelativeToolTip": "Servistar.Server\\Controllers\\AppliancesController.cs",
+              "ViewState": "AQIAABwAAAAAAAAAAAAowCcAAAA2AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-28T04:34:27.942Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "CustumersEntity.cs",
-              "DocumentMoniker": "D:\\Dev\\Servistar\\Servistar.Server\\Entities\\CustumersEntity.cs",
-              "RelativeDocumentMoniker": "Servistar.Server\\Entities\\CustumersEntity.cs",
-              "ToolTip": "D:\\Dev\\Servistar\\Servistar.Server\\Entities\\CustumersEntity.cs",
-              "RelativeToolTip": "Servistar.Server\\Entities\\CustumersEntity.cs",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAuwAUAAAAgAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-26T00:28:36.677Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "CustomerModel.cs",
-              "DocumentMoniker": "D:\\Dev\\Servistar\\Servistar.Server\\Models\\CustomerModel.cs",
-              "RelativeDocumentMoniker": "Servistar.Server\\Models\\CustomerModel.cs",
-              "ToolTip": "D:\\Dev\\Servistar\\Servistar.Server\\Models\\CustomerModel.cs",
-              "RelativeToolTip": "Servistar.Server\\Models\\CustomerModel.cs",
-              "ViewState": "AQIAABcAAAAAAAAAAAAtwCIAAAArAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-27T03:05:50.288Z",
+              "WhenOpened": "2024-04-02T01:43:54.622Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "ICustomersService.cs",
-              "DocumentMoniker": "D:\\Dev\\Servistar\\Servistar.Server\\Services\\ICustomersService.cs",
-              "RelativeDocumentMoniker": "Servistar.Server\\Services\\ICustomersService.cs",
-              "ToolTip": "D:\\Dev\\Servistar\\Servistar.Server\\Services\\ICustomersService.cs*",
-              "RelativeToolTip": "Servistar.Server\\Services\\ICustomersService.cs*",
-              "ViewState": "AQIAAAUAAAAAAAAAAAAiwAsAAAApAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-27T03:20:40.14Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "CustomersService.cs",
-              "DocumentMoniker": "D:\\Dev\\Servistar\\Servistar.Server\\Services\\Implementations\\CustomersService.cs",
-              "RelativeDocumentMoniker": "Servistar.Server\\Services\\Implementations\\CustomersService.cs",
-              "ToolTip": "D:\\Dev\\Servistar\\Servistar.Server\\Services\\Implementations\\CustomersService.cs",
-              "RelativeToolTip": "Servistar.Server\\Services\\Implementations\\CustomersService.cs",
-              "ViewState": "AQIAADcAAAAAAAAAAAAvwD8AAAA2AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-27T03:20:55.794Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
               "Title": "CustomersController.cs",
               "DocumentMoniker": "D:\\Dev\\Servistar\\Servistar.Server\\Controllers\\CustomersController.cs",
               "RelativeDocumentMoniker": "Servistar.Server\\Controllers\\CustomersController.cs",
               "ToolTip": "D:\\Dev\\Servistar\\Servistar.Server\\Controllers\\CustomersController.cs",
               "RelativeToolTip": "Servistar.Server\\Controllers\\CustomersController.cs",
-              "ViewState": "AQIAADQAAAAAAAAAAAAkwEQAAAAjAAAA",
+              "ViewState": "AQIAADAAAAAAAAAAAAAYwDkAAABJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-03-27T03:30:38.275Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "ServistarContext.cs",
-              "DocumentMoniker": "D:\\Dev\\Servistar\\Servistar.Server\\Contexts\\ServistarContext.cs",
-              "RelativeDocumentMoniker": "Servistar.Server\\Contexts\\ServistarContext.cs",
-              "ToolTip": "D:\\Dev\\Servistar\\Servistar.Server\\Contexts\\ServistarContext.cs",
-              "RelativeToolTip": "Servistar.Server\\Contexts\\ServistarContext.cs",
-              "ViewState": "AQIAAAkAAAAAAAAAAAAAABIAAAA8AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-26T00:54:11.167Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 6,
-              "Title": "AutoMapperProfile.cs",
-              "DocumentMoniker": "D:\\Dev\\Servistar\\Servistar.Server\\AutoMapperProfile.cs",
-              "RelativeDocumentMoniker": "Servistar.Server\\AutoMapperProfile.cs",
-              "ToolTip": "D:\\Dev\\Servistar\\Servistar.Server\\AutoMapperProfile.cs",
-              "RelativeToolTip": "Servistar.Server\\AutoMapperProfile.cs",
-              "ViewState": "AQIAAAwAAAAAAAAAAAAAwBcAAABhAAAA",
+              "Title": "AuthenticationController.cs",
+              "DocumentMoniker": "D:\\Dev\\Servistar\\Servistar.Server\\Controllers\\AuthenticationController.cs",
+              "RelativeDocumentMoniker": "Servistar.Server\\Controllers\\AuthenticationController.cs",
+              "ToolTip": "D:\\Dev\\Servistar\\Servistar.Server\\Controllers\\AuthenticationController.cs",
+              "RelativeToolTip": "Servistar.Server\\Controllers\\AuthenticationController.cs",
+              "ViewState": "AQIAAAsAAAAAAAAAAAAYwB0AAABeAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-26T01:24:30.782Z",
+              "WhenOpened": "2024-03-22T01:52:32.877Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "IApplianceService.cs",
+              "DocumentMoniker": "D:\\Dev\\Servistar\\Servistar.Server\\Services\\IApplianceService.cs",
+              "RelativeDocumentMoniker": "Servistar.Server\\Services\\IApplianceService.cs",
+              "ToolTip": "D:\\Dev\\Servistar\\Servistar.Server\\Services\\IApplianceService.cs",
+              "RelativeToolTip": "Servistar.Server\\Services\\IApplianceService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-02T01:34:36.693Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "Program.cs",
-              "DocumentMoniker": "D:\\Dev\\Servistar\\Servistar.Server\\Program.cs",
-              "RelativeDocumentMoniker": "Servistar.Server\\Program.cs",
-              "ToolTip": "D:\\Dev\\Servistar\\Servistar.Server\\Program.cs",
-              "RelativeToolTip": "Servistar.Server\\Program.cs",
-              "ViewState": "AQIAAEsAAAAAAAAAAAAAAF4AAAAKAAAA",
+              "DocumentIndex": 4,
+              "Title": "CatalogueModel.cs",
+              "DocumentMoniker": "D:\\Dev\\Servistar\\Servistar.Server\\Models\\CatalogueModel.cs",
+              "RelativeDocumentMoniker": "Servistar.Server\\Models\\CatalogueModel.cs",
+              "ToolTip": "D:\\Dev\\Servistar\\Servistar.Server\\Models\\CatalogueModel.cs",
+              "RelativeToolTip": "Servistar.Server\\Models\\CatalogueModel.cs",
+              "ViewState": "AQIAAAIAAAAAAAAAAIA+wA0AAAAmAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-22T01:43:32.222Z"
+              "WhenOpened": "2024-04-02T01:32:26.122Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 2,
               "Title": "MunicipalitiesController.cs",
               "DocumentMoniker": "D:\\Dev\\Servistar\\Servistar.Server\\Controllers\\MunicipalitiesController.cs",
               "RelativeDocumentMoniker": "Servistar.Server\\Controllers\\MunicipalitiesController.cs",
@@ -275,20 +251,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "AppServices.cs",
-              "DocumentMoniker": "D:\\Dev\\Servistar\\Servistar.Server\\AppServices.cs",
-              "RelativeDocumentMoniker": "Servistar.Server\\AppServices.cs",
-              "ToolTip": "D:\\Dev\\Servistar\\Servistar.Server\\AppServices.cs",
-              "RelativeToolTip": "Servistar.Server\\AppServices.cs",
-              "ViewState": "AQIAACoAAAAAAAAAAAAiwCgAAAA9AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-22T01:43:12.522Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 7,
               "Title": "CheckPaginationService.cs",
               "DocumentMoniker": "D:\\Dev\\Servistar\\Servistar.Server\\Services\\Implementations\\CheckPaginationService.cs",
               "RelativeDocumentMoniker": "Servistar.Server\\Services\\Implementations\\CheckPaginationService.cs",
@@ -300,7 +263,55 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ApplianceService.cs",
+              "DocumentMoniker": "D:\\Dev\\Servistar\\Servistar.Server\\Services\\Implementations\\ApplianceService.cs",
+              "RelativeDocumentMoniker": "Servistar.Server\\Services\\Implementations\\ApplianceService.cs",
+              "ToolTip": "D:\\Dev\\Servistar\\Servistar.Server\\Services\\Implementations\\ApplianceService.cs",
+              "RelativeToolTip": "Servistar.Server\\Services\\Implementations\\ApplianceService.cs",
+              "ViewState": "AQIAACMAAAAAAAAAAAArwDQAAABOAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-02T01:34:51.655Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "CustomersService.cs",
+              "DocumentMoniker": "D:\\Dev\\Servistar\\Servistar.Server\\Services\\Implementations\\CustomersService.cs",
+              "RelativeDocumentMoniker": "Servistar.Server\\Services\\Implementations\\CustomersService.cs",
+              "ToolTip": "D:\\Dev\\Servistar\\Servistar.Server\\Services\\Implementations\\CustomersService.cs",
+              "RelativeToolTip": "Servistar.Server\\Services\\Implementations\\CustomersService.cs",
+              "ViewState": "AQIAAEYAAAAAAAAAAAAkwDYAAAAfAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-27T03:20:55.794Z"
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 10,
+              "Title": "AutoMapperProfile.cs",
+              "DocumentMoniker": "D:\\Dev\\Servistar\\Servistar.Server\\AutoMapperProfile.cs",
+              "RelativeDocumentMoniker": "Servistar.Server\\AutoMapperProfile.cs",
+              "ToolTip": "D:\\Dev\\Servistar\\Servistar.Server\\AutoMapperProfile.cs",
+              "RelativeToolTip": "Servistar.Server\\AutoMapperProfile.cs",
+              "ViewState": "AQIAABEAAAAAAAAAAAAzwBQAAAA3AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-26T01:24:30.782Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "AppServices.cs",
+              "DocumentMoniker": "D:\\Dev\\Servistar\\Servistar.Server\\AppServices.cs",
+              "RelativeDocumentMoniker": "Servistar.Server\\AppServices.cs",
+              "ToolTip": "D:\\Dev\\Servistar\\Servistar.Server\\AppServices.cs",
+              "RelativeToolTip": "Servistar.Server\\AppServices.cs",
+              "ViewState": "AQIAABAAAAAAAAAAAAAcwCAAAABCAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-22T01:43:12.522Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
               "Title": "MunicipalitiesService.cs",
               "DocumentMoniker": "D:\\Dev\\Servistar\\Servistar.Server\\Services\\Implementations\\MunicipalitiesService.cs",
               "RelativeDocumentMoniker": "Servistar.Server\\Services\\Implementations\\MunicipalitiesService.cs",
@@ -312,7 +323,127 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 39,
+              "Title": "20240402013155_brands.cs",
+              "DocumentMoniker": "D:\\Dev\\Servistar\\Servistar.Server\\Migrations\\20240402013155_brands.cs",
+              "RelativeDocumentMoniker": "Servistar.Server\\Migrations\\20240402013155_brands.cs",
+              "ToolTip": "D:\\Dev\\Servistar\\Servistar.Server\\Migrations\\20240402013155_brands.cs",
+              "RelativeToolTip": "Servistar.Server\\Migrations\\20240402013155_brands.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-02T01:31:55.555Z"
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 13,
+              "Title": "AppliancesEntity.cs",
+              "DocumentMoniker": "D:\\Dev\\Servistar\\Servistar.Server\\Entities\\AppliancesEntity.cs",
+              "RelativeDocumentMoniker": "Servistar.Server\\Entities\\AppliancesEntity.cs",
+              "ToolTip": "D:\\Dev\\Servistar\\Servistar.Server\\Entities\\AppliancesEntity.cs",
+              "RelativeToolTip": "Servistar.Server\\Entities\\AppliancesEntity.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-02T01:29:12.423Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "BrandsEntity.cs",
+              "DocumentMoniker": "D:\\Dev\\Servistar\\Servistar.Server\\Entities\\BrandsEntity.cs",
+              "RelativeDocumentMoniker": "Servistar.Server\\Entities\\BrandsEntity.cs",
+              "ToolTip": "D:\\Dev\\Servistar\\Servistar.Server\\Entities\\BrandsEntity.cs",
+              "RelativeToolTip": "Servistar.Server\\Entities\\BrandsEntity.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAApAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-02T01:27:18.129Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "ServistarContext.cs",
+              "DocumentMoniker": "D:\\Dev\\Servistar\\Servistar.Server\\Contexts\\ServistarContext.cs",
+              "RelativeDocumentMoniker": "Servistar.Server\\Contexts\\ServistarContext.cs",
+              "ToolTip": "D:\\Dev\\Servistar\\Servistar.Server\\Contexts\\ServistarContext.cs",
+              "RelativeToolTip": "Servistar.Server\\Contexts\\ServistarContext.cs",
+              "ViewState": "AQIAAFgAAAAAAAAAAAA/wBIAAAA8AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-26T00:54:11.167Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "ICustomersService.cs",
+              "DocumentMoniker": "D:\\Dev\\Servistar\\Servistar.Server\\Services\\ICustomersService.cs",
+              "RelativeDocumentMoniker": "Servistar.Server\\Services\\ICustomersService.cs",
+              "ToolTip": "D:\\Dev\\Servistar\\Servistar.Server\\Services\\ICustomersService.cs",
+              "RelativeToolTip": "Servistar.Server\\Services\\ICustomersService.cs",
+              "ViewState": "AQIAAAUAAAAAAAAAAAAiwAsAAAApAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-27T03:20:40.14Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "CustomerModel.cs",
+              "DocumentMoniker": "D:\\Dev\\Servistar\\Servistar.Server\\Models\\CustomerModel.cs",
+              "RelativeDocumentMoniker": "Servistar.Server\\Models\\CustomerModel.cs",
+              "ToolTip": "D:\\Dev\\Servistar\\Servistar.Server\\Models\\CustomerModel.cs",
+              "RelativeToolTip": "Servistar.Server\\Models\\CustomerModel.cs",
+              "ViewState": "AQIAAAwAAAAAAAAAAAA1wBEAAAA1AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-27T03:05:50.288Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "CustomerAddressModel.cs",
+              "DocumentMoniker": "D:\\Dev\\Servistar\\Servistar.Server\\Models\\CustomerAddressModel.cs",
+              "RelativeDocumentMoniker": "Servistar.Server\\Models\\CustomerAddressModel.cs",
+              "ToolTip": "D:\\Dev\\Servistar\\Servistar.Server\\Models\\CustomerAddressModel.cs",
+              "RelativeToolTip": "Servistar.Server\\Models\\CustomerAddressModel.cs",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAABAAAAAdAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-27T03:07:47.407Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\Dev\\Servistar\\Servistar.Server\\Program.cs",
+              "RelativeDocumentMoniker": "Servistar.Server\\Program.cs",
+              "ToolTip": "D:\\Dev\\Servistar\\Servistar.Server\\Program.cs",
+              "RelativeToolTip": "Servistar.Server\\Program.cs",
+              "ViewState": "AQIAAFEAAAAAAAAAAAArwF4AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-22T01:43:32.222Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "CustumersEntity.cs",
+              "DocumentMoniker": "D:\\Dev\\Servistar\\Servistar.Server\\Entities\\CustumersEntity.cs",
+              "RelativeDocumentMoniker": "Servistar.Server\\Entities\\CustumersEntity.cs",
+              "ToolTip": "D:\\Dev\\Servistar\\Servistar.Server\\Entities\\CustumersEntity.cs",
+              "RelativeToolTip": "Servistar.Server\\Entities\\CustumersEntity.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAuwAUAAAAgAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-26T00:28:36.677Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "20240328043427_CustomerUpdate.cs",
+              "DocumentMoniker": "D:\\Dev\\Servistar\\Servistar.Server\\Migrations\\20240328043427_CustomerUpdate.cs",
+              "RelativeDocumentMoniker": "Servistar.Server\\Migrations\\20240328043427_CustomerUpdate.cs",
+              "ToolTip": "D:\\Dev\\Servistar\\Servistar.Server\\Migrations\\20240328043427_CustomerUpdate.cs",
+              "RelativeToolTip": "Servistar.Server\\Migrations\\20240328043427_CustomerUpdate.cs",
+              "ViewState": "AQIAACoAAAAAAAAAAAAYwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-28T04:34:27.942Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
               "Title": "AuthenticationService.cs",
               "DocumentMoniker": "D:\\Dev\\Servistar\\Servistar.Server\\Services\\Implementations\\AuthenticationService.cs",
               "RelativeDocumentMoniker": "Servistar.Server\\Services\\Implementations\\AuthenticationService.cs",
@@ -324,19 +455,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "AuthenticationController.cs",
-              "DocumentMoniker": "D:\\Dev\\Servistar\\Servistar.Server\\Controllers\\AuthenticationController.cs",
-              "RelativeDocumentMoniker": "Servistar.Server\\Controllers\\AuthenticationController.cs",
-              "ToolTip": "D:\\Dev\\Servistar\\Servistar.Server\\Controllers\\AuthenticationController.cs",
-              "RelativeToolTip": "Servistar.Server\\Controllers\\AuthenticationController.cs",
-              "ViewState": "AQIAAAsAAAAAAAAAAAAYwB0AAABeAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-22T01:52:32.877Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 22,
               "Title": "CustomersPhoneNumbersModel.cs",
               "DocumentMoniker": "D:\\Dev\\Servistar\\Servistar.Server\\Models\\CustomersPhoneNumbersModel.cs",
               "RelativeDocumentMoniker": "Servistar.Server\\Models\\CustomersPhoneNumbersModel.cs",
@@ -348,7 +467,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 23,
               "Title": "TokenService.cs",
               "DocumentMoniker": "D:\\Dev\\Servistar\\Servistar.Server\\Services\\Implementations\\TokenService.cs",
               "RelativeDocumentMoniker": "Servistar.Server\\Services\\Implementations\\TokenService.cs",
@@ -360,7 +479,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 24,
               "Title": "ITokenService.cs",
               "DocumentMoniker": "D:\\Dev\\Servistar\\Servistar.Server\\Services\\ITokenService.cs",
               "RelativeDocumentMoniker": "Servistar.Server\\Services\\ITokenService.cs",
@@ -372,7 +491,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 25,
               "Title": "ICheckPaginationService.cs",
               "DocumentMoniker": "D:\\Dev\\Servistar\\Servistar.Server\\Services\\ICheckPaginationService.cs",
               "RelativeDocumentMoniker": "Servistar.Server\\Services\\ICheckPaginationService.cs",
@@ -384,7 +503,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 26,
               "Title": "20240327030533_phone.cs",
               "DocumentMoniker": "D:\\Dev\\Servistar\\Servistar.Server\\Migrations\\20240327030533_phone.cs",
               "RelativeDocumentMoniker": "Servistar.Server\\Migrations\\20240327030533_phone.cs",
@@ -396,7 +515,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 27,
               "Title": "PaginationResponseModel.cs",
               "DocumentMoniker": "D:\\Dev\\Servistar\\Servistar.Server\\Models\\Sources\\PaginationResponseModel.cs",
               "RelativeDocumentMoniker": "Servistar.Server\\Models\\Sources\\PaginationResponseModel.cs",
@@ -408,19 +527,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
-              "Title": "CustomerAddressModel.cs",
-              "DocumentMoniker": "D:\\Dev\\Servistar\\Servistar.Server\\Models\\CustomerAddressModel.cs",
-              "RelativeDocumentMoniker": "Servistar.Server\\Models\\CustomerAddressModel.cs",
-              "ToolTip": "D:\\Dev\\Servistar\\Servistar.Server\\Models\\CustomerAddressModel.cs",
-              "RelativeToolTip": "Servistar.Server\\Models\\CustomerAddressModel.cs",
-              "ViewState": "AQIAAA4AAAAAAAAAAAA7wBUAAAAoAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-27T03:07:47.407Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 28,
               "Title": "PhoneBook.cs",
               "DocumentMoniker": "D:\\Dev\\Servistar\\Servistar.Server\\Entities\\PhoneBook.cs",
               "RelativeDocumentMoniker": "Servistar.Server\\Entities\\PhoneBook.cs",
@@ -432,7 +539,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 29,
               "Title": "CustomersAddressEntity.cs",
               "DocumentMoniker": "D:\\Dev\\Servistar\\Servistar.Server\\Entities\\CustomersAddressEntity.cs",
               "RelativeDocumentMoniker": "Servistar.Server\\Entities\\CustomersAddressEntity.cs",
@@ -444,7 +551,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 30,
               "Title": "Address.cs",
               "DocumentMoniker": "D:\\Dev\\Servistar\\Servistar.Server\\Entities\\Address.cs",
               "RelativeDocumentMoniker": "Servistar.Server\\Entities\\Address.cs",
@@ -456,7 +563,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 31,
               "Title": "CustumersPhoneNumbersEntity.cs",
               "DocumentMoniker": "D:\\Dev\\Servistar\\Servistar.Server\\Entities\\CustumersPhoneNumbersEntity.cs",
               "RelativeDocumentMoniker": "Servistar.Server\\Entities\\CustumersPhoneNumbersEntity.cs",
@@ -468,7 +575,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
+              "DocumentIndex": 32,
               "Title": "MunicipalitiesEntity.cs",
               "DocumentMoniker": "D:\\Dev\\Servistar\\Servistar.Server\\Entities\\MunicipalitiesEntity.cs",
               "RelativeDocumentMoniker": "Servistar.Server\\Entities\\MunicipalitiesEntity.cs",
@@ -480,7 +587,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 27,
+              "DocumentIndex": 33,
               "Title": "MinicipalitiesModel.cs",
               "DocumentMoniker": "D:\\Dev\\Servistar\\Servistar.Server\\Models\\Sources\\MinicipalitiesModel.cs",
               "RelativeDocumentMoniker": "Servistar.Server\\Models\\Sources\\MinicipalitiesModel.cs",
@@ -492,7 +599,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 28,
+              "DocumentIndex": 34,
               "Title": "IMunicipalitiesService.cs",
               "DocumentMoniker": "D:\\Dev\\Servistar\\Servistar.Server\\Services\\IMunicipalitiesService.cs",
               "RelativeDocumentMoniker": "Servistar.Server\\Services\\IMunicipalitiesService.cs",
@@ -504,7 +611,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 29,
+              "DocumentIndex": 35,
               "Title": "20240326012103_Customer.cs",
               "DocumentMoniker": "D:\\Dev\\Servistar\\Servistar.Server\\Migrations\\20240326012103_Customer.cs",
               "RelativeDocumentMoniker": "Servistar.Server\\Migrations\\20240326012103_Customer.cs",
@@ -516,7 +623,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 30,
+              "DocumentIndex": 36,
               "Title": "IAuthenticationService.cs",
               "DocumentMoniker": "D:\\Dev\\Servistar\\Servistar.Server\\Services\\IAuthenticationService.cs",
               "RelativeDocumentMoniker": "Servistar.Server\\Services\\IAuthenticationService.cs",
@@ -528,7 +635,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 31,
+              "DocumentIndex": 37,
               "Title": "Servistar.Server",
               "DocumentMoniker": "D:\\Dev\\Servistar\\Servistar.Server\\Servistar.Server.csproj",
               "RelativeDocumentMoniker": "Servistar.Server\\Servistar.Server.csproj",
@@ -539,7 +646,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 32,
+              "DocumentIndex": 38,
               "Title": "20240322014947_Initial.cs",
               "DocumentMoniker": "D:\\Dev\\Servistar\\Servistar.Server\\Migrations\\20240322014947_Initial.cs",
               "RelativeDocumentMoniker": "Servistar.Server\\Migrations\\20240322014947_Initial.cs",

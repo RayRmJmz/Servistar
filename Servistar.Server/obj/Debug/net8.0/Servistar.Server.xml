@@ -95,5 +95,17 @@
         <member name="M:Servistar.Server.Migrations.CustomerUpdate.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)">
             <inheritdoc />
         </member>
+        <member name="T:Servistar.Server.Migrations.brands">
+            <inheritdoc />
+        </member>
+        <member name="M:Servistar.Server.Migrations.brands.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:Servistar.Server.Migrations.brands.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:Servistar.Server.Migrations.brands.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)">
+            <inheritdoc />
+        </member>
     </members>
 </doc>

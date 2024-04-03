@@ -1,11 +1,13 @@
 import GroupsIcon from "@mui/icons-material/Groups";
 import HomeIcon from "@mui/icons-material/Home";
-import LibraryBooksIcon from "@mui/icons-material/LibraryBooks";
 import { ROLES, ROUTES, LABELS } from "../constants";
 import ConstructionIcon from "@mui/icons-material/Construction";
 import { SidenavItem } from "../models";
 import useCredentials from "./useCredentials";
 import SupportAgentIcon from "@mui/icons-material/SupportAgent";
+import CategoryIcon from "@mui/icons-material/Category";
+import WhatshotIcon from "@mui/icons-material/Whatshot";
+import MicrowaveIcon from "@mui/icons-material/Microwave";
 export default function useSideNavItems() {
   const { roles } = useCredentials();
   /*
@@ -47,6 +49,25 @@ export default function useSideNavItems() {
       icon: SupportAgentIcon,
       noView: false,
       subItems: [],
+      roles: [ROLES.ADMI, ROLES.ADMI],
+    },
+    {
+      label: "Catálogos",
+      path: "#",
+      icon: CategoryIcon,
+      noView: true,
+      subItems: [
+        {
+          label: LABELS.BRANDS,
+          path: ROUTES.BRANDS,
+          icon: WhatshotIcon,
+        },
+        {
+          label: LABELS.APPLIANCES,
+          path: ROUTES.APPLIENCES,
+          icon: MicrowaveIcon,
+        },
+      ],
       roles: [ROLES.ADMI, ROLES.ADMI],
     },
   ];
