@@ -12,7 +12,7 @@ export interface ICustomerResponse {
   isActive: boolean;
   status?: string;
   phoneNumbers: IPhoneBookResponse[];
-  address: IAddress;
+  address: IAddress[];
 }
 
 export interface ICustomerResponseSingle {

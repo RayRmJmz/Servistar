@@ -1,5 +1,4 @@
 import {
-  Box,
   Button,
   Dialog,
   DialogActions,
@@ -76,7 +75,7 @@ export default function AddEditCustomerModal({
       TransitionComponent={ModalTransition}
       onClose={handleClose}
       aria-describedby="alert-dialog-slide-description"
-      maxWidth="md"
+      maxWidth="xl"
       fullWidth={true}
     >
       <form
@@ -91,8 +90,8 @@ export default function AddEditCustomerModal({
         <DialogTitle>{`${LABELS.ADD} ${LABELS.CUSTOMER}`}</DialogTitle>
         <DialogContent>
           <DialogContentText id="alert-dialog-slide-description">
-            <Grid container spacing={2} sx={{ marginTop: "15px" }}>
-              <Grid item xs={12} sm={12} md={12} lg={12} xl={12}>
+            <Grid container spacing={1} sx={{ mt: 1 }}>
+              <Grid item xs={12} sm={12} md={4} lg={4} xl={4}>
                 <TextField
                   id="name"
                   label={LABELS.NAME}
@@ -106,9 +105,7 @@ export default function AddEditCustomerModal({
                   disabled={isLoading || !!isActive}
                 />
               </Grid>
-            </Grid>
-            <Grid container spacing={2} sx={{ marginTop: "15px" }}>
-              <Grid item xs={6} sm={6} md={6} lg={6} xl={6}>
+              <Grid item xs={6} sm={6} md={4} lg={4} xl={4}>
                 <TextField
                   id="lastName"
                   label={LABELS.LAST_NAME}
@@ -122,7 +119,7 @@ export default function AddEditCustomerModal({
                   disabled={isLoading || !!isActive}
                 />
               </Grid>
-              <Grid item xs={6} sm={6} md={6} lg={6} xl={6}>
+              <Grid item xs={6} sm={6} md={4} lg={4} xl={4}>
                 <TextField
                   id="secondLastName"
                   label={LABELS.SECOND_LAST_NAME}
@@ -137,13 +134,12 @@ export default function AddEditCustomerModal({
                 />
               </Grid>
             </Grid>
+
             <ManageCreatePhoneNumbers />
             <ErrorForm message={errors.phoneNumbers?.message} />
-            <Grid container spacing={2} sx={{ marginTop: "15px" }}>
-              <Grid item container xs={6} sm={6} md={6} lg={6} xl={6}></Grid>
-              <Grid item container xs={6} sm={6} md={6} lg={6} xl={6}></Grid>
-            </Grid>
+
             <ManageCreateAddress />
+            <ErrorForm message={errors.address?.message} />
 
             <ErrorAlert />
             <AlertComponent />

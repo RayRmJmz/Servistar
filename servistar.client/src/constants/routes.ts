@@ -5,5 +5,6 @@ export const enum ROUTES {
   TEST = "/test",
   CUSTOMERS = "/customers",
   BRANDS = "/brands",
+  USERS = "/users",
   APPLIENCES = "/appliances",
 }

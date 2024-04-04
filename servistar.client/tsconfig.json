@@ -28,6 +28,7 @@
     "@constants/*": ["src/constants/*"],
     "@utils/*": ["src/utils/*"],
     "@store/*": ["src/store/*"],
+    "@hooks/*": ["src/hooks/*"],
     "@components/*": ["src/components/*"],
     "@assets/*": ["src/assets/*"],
     "@pages/*": ["src/pages/*"],

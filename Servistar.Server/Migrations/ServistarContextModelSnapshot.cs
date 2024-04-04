@@ -217,6 +217,14 @@ namespace Servistar.Server.Migrations
                     b.Property<int>("AccessFailedCount")
                         .HasColumnType("int");
 
+                    b.Property<bool?>("Active")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("bit")
+                        .HasDefaultValue(true);
+
+                    b.Property<DateTime?>("BirthDate")
+                        .HasColumnType("Date");
+
                     b.Property<string>("ConcurrencyStamp")
                         .IsConcurrencyToken()
                         .HasColumnType("nvarchar(max)");
@@ -228,11 +236,23 @@ namespace Servistar.Server.Migrations
                     b.Property<bool>("EmailConfirmed")
                         .HasColumnType("bit");
 
+                    b.Property<string>("LastName")
+                        .HasMaxLength(100)
+                        .HasColumnType("nvarchar(100)");
+
                     b.Property<bool>("LockoutEnabled")
                         .HasColumnType("bit");
 
                     b.Property<DateTimeOffset?>("LockoutEnd")
                         .HasColumnType("datetimeoffset");
+
+                    b.Property<string>("NNS")
+                        .HasMaxLength(20)
+                        .HasColumnType("nvarchar(20)");
+
+                    b.Property<string>("Name")
+                        .HasMaxLength(100)
+                        .HasColumnType("nvarchar(100)");
 
                     b.Property<string>("NormalizedEmail")
                         .HasMaxLength(256)
@@ -251,8 +271,18 @@ namespace Servistar.Server.Migrations
                     b.Property<bool>("PhoneNumberConfirmed")
                         .HasColumnType("bit");
 
+                    b.Property<string>("SecondLastName")
+                        .HasMaxLength(100)
+                        .HasColumnType("nvarchar(100)");
+
                     b.Property<string>("SecurityStamp")
                         .HasColumnType("nvarchar(max)");
+
+                    b.Property<DateTime?>("StartedDate")
+                        .HasColumnType("Date");
+
+                    b.Property<DateTime?>("TerminationDate")
+                        .HasColumnType("Date");
 
                     b.Property<bool>("TwoFactorEnabled")
                         .HasColumnType("bit");
@@ -278,15 +308,15 @@ namespace Servistar.Server.Migrations
                         {
                             Id = "99999999",
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "955c58d8-a2bf-481e-b5cd-70abee9f9cec",
+                            ConcurrencyStamp = "ff3f3001-8003-4c46-945f-18bc16c0314e",
                             Email = "rayrmjmz@outlook.com",
                             EmailConfirmed = true,
                             LockoutEnabled = false,
                             NormalizedEmail = "RAYRMJMZ@OUTLOOK.COM",
                             NormalizedUserName = "ADMINISTRADOR",
-                            PasswordHash = "AQAAAAIAAYagAAAAEAruxuQR3Al0gMquO3m4Y5VMtD5rmSWL2snKk5qnzL4vQAC7t8QOWzz5ELQacqMrpg==",
+                            PasswordHash = "AQAAAAIAAYagAAAAEMTCXTL8sBAnizFEtyvKWSkYVnOqF7v8Vul+FA6NRoPgBFHz95WZOtBSnzAfZqUsOA==",
                             PhoneNumberConfirmed = false,
-                            SecurityStamp = "9ec2679e-2ef4-407d-a0ea-ecda4cd57a87",
+                            SecurityStamp = "603c75ff-f11f-499a-a264-072cc126682d",
                             TwoFactorEnabled = false,
                             UserName = "administrador"
                         });

@@ -28,10 +28,12 @@ namespace Servistar.Server
 
             services.AddScoped<IAuthenticationService, AuthenticationService>();
             services.AddScoped<ITokenService, TokenService>();
+            services.AddScoped<IRolesService, RolesService>();
+            services.AddScoped<IUsersService, UsersService>();
             services.AddScoped<IMunicipalitiesService, MunicipalitiesService>();
             services.AddScoped<ICustomersService, CustomersService>();
             services.AddScoped<IApplianceService, ApplianceService>();
-
+            services.AddScoped<IBrandsService, BrandsService>();
             services.AddValidatorsFromAssembly(typeof(AppServices).Assembly);
 
             return services;

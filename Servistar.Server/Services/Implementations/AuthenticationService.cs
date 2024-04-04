@@ -104,5 +104,8 @@ namespace Servistar.Server.Services.Implementations
 
             return user == null ? throw new InvalidCredentialException($"Error en httpContext: {_httpContextAccessor.HttpContext.User} not found.") : user;
         }
+
+       
+
     }
 }

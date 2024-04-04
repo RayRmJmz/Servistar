@@ -29,5 +29,7 @@ namespace Servistar.Server.Controllers
         {
             return StatusCode(StatusCodes.Status200OK, await _authenticationService.LoginAsync(request));
         }
+
+
     }
 }

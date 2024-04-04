@@ -16,6 +16,13 @@ namespace Servistar.Server.Controllers
             _service = service;
         }
 
+        /// <summary>
+        /// Search appliance by id 
+        /// </summary>
+        /// <param name="id">Appliance id </param>
+        /// <returns>
+        /// Appliance model
+        /// </returns>
         [HttpGet("{id}")]
         [Produces("application/json")]
         [ProducesResponseType(typeof(ApplianceResponseModel), 200)]
@@ -36,7 +43,7 @@ namespace Servistar.Server.Controllers
 
         [HttpPost]
         [Produces("application/json")]
-        [ProducesResponseType(typeof(IList<ApplianceResponseModel>), 200)]
+        [ProducesResponseType(typeof(ApplianceResponseModel), 200)]
         public async Task<IActionResult> PostAppliance(ApplianceRequestModel request)
         {
             return Ok(await _service.PostApplianceAsync(request));

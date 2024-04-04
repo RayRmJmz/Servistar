@@ -4,6 +4,7 @@ export interface IAddress {
   street: string;
   colony: string;
   minicipalityId: number;
+  minicipality: string;
   state: string;
   postalCode: number;
   principal: boolean;

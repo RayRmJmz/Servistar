@@ -8,6 +8,7 @@ import SupportAgentIcon from "@mui/icons-material/SupportAgent";
 import CategoryIcon from "@mui/icons-material/Category";
 import WhatshotIcon from "@mui/icons-material/Whatshot";
 import MicrowaveIcon from "@mui/icons-material/Microwave";
+import SupervisedUserCircleIcon from "@mui/icons-material/SupervisedUserCircle";
 export default function useSideNavItems() {
   const { roles } = useCredentials();
   /*
@@ -33,6 +34,14 @@ export default function useSideNavItems() {
       noView: false,
       subItems: [],
       roles: [ROLES.ADMI, ROLES.ADMI],
+    },
+    {
+      label: LABELS.USERS,
+      path: ROUTES.USERS,
+      icon: SupervisedUserCircleIcon,
+      noView: false,
+      subItems: [],
+      roles: [ROLES.ADMI],
     },
     {
       label: LABELS.SERVICES,

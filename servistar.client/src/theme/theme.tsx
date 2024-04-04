@@ -36,7 +36,7 @@ export const getDesignTokens = (mode: PaletteMode) => ({
 
   typography: {
     fontFamily: "Roboto , sans-serif",
-    fontSize: 14,
+    // fontSize: 14,
   },
 });
 

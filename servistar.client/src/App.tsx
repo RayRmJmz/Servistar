@@ -11,6 +11,8 @@ import Navs from "./components/Navs/Navs";
 import Customers from "./pages/customers/Customers";
 import TesttingForm from "./pages/test/TesttingForm";
 import Appliances from "./pages/catalogues/Appliances";
+import Brands from "./pages/catalogues/Brands";
+import Users from "./pages/users/Users";
 function App() {
   const { theme } = useThemeContext();
   const isLoggedIn = useAuthenticationStore((state) => state.isLoggedIn);
@@ -38,6 +40,8 @@ function App() {
               path={ROUTES.APPLIENCES}
               element={navegacion(<Appliances />)}
             />
+            <Route path={ROUTES.USERS} element={navegacion(<Users />)} />
+            <Route path={ROUTES.BRANDS} element={navegacion(<Brands />)} />
             <Route path={ROUTES.TEST} element={navegacion(<TesttingForm />)} />
             <Route path={ROUTES.NOT_FOUND} element={navegacion(<NotFound />)} />
           </Routes>

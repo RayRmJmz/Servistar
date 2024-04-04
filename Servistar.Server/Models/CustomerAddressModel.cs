@@ -31,6 +31,7 @@ namespace Servistar.Server.Models
         [Required]
         public string Colony { get; set; }
         public int MinicipalityId { get; set; }
+        public string Minicipality { get; set; }
         public string State { get; set; }
         public int PostalCode { get; set; }
         public bool Principal { get; set; }

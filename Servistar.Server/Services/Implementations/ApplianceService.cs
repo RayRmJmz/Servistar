@@ -29,7 +29,7 @@ namespace Servistar.Server.Services.Implementations
             }
             catch (DbUpdateException e)
             {
-                throw new NullReferenceException($"Error al guardar nuevo electrodomésticos: {e.InnerException.Message}");
+                throw new NullReferenceException($"Error al agregar nuevo electrodoméstico: {e.InnerException.Message}");
             }
         }
 
@@ -40,7 +40,7 @@ namespace Servistar.Server.Services.Implementations
                 var appliance = _mapperService.Map<ApplianceResponseModel>(await _dbContext.Appliances.FindAsync(id));
                 if (appliance == null)
                 {
-                    throw new NullReferenceException($"No se encontró electrodomésticos con id {id}.");
+                    throw new NullReferenceException($"No se encontró electrodoméstico con id {id}.");
                 }
                 return appliance;
             }
@@ -54,12 +54,13 @@ namespace Servistar.Server.Services.Implementations
         {
             try
             {
-                var appliance = _mapperService.Map<IList<ApplianceResponseModel>>(await _dbContext.Appliances.ToListAsync());
-                if (appliance == null)
+                var appliances = _mapperService.Map<IList<ApplianceResponseModel>>(
+                    await _dbContext.Appliances.ToListAsync());
+                if (appliances == null)
                 {
                     throw new NullReferenceException($"No hay electrodomésticos agregados.");
                 }
-                return appliance;
+                return appliances;
             }
             catch (DbUpdateException e)
             {

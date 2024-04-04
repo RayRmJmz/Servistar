@@ -12,4 +12,5 @@ export * from "./interfaces/ICustomers";
 export * from "./interfaces/IPhoneBook";
 export * from "./interfaces/IAppliance";
 export * from "./interfaces/IBrands";
+export * from "./interfaces/IUsers";
 //      export * from "";

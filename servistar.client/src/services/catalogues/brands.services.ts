@@ -9,7 +9,7 @@ export const getAllBrandService = async (): Promise<IBrandsAdapter> => {
   return { brands: response.data };
 };
 
-export const postBrnadService = async (request: IBrandRequest) => {
+export const postBrandService = async (request: IBrandRequest) => {
   const response = await http.post(`${API_SERVICES.BRANDS}`, request);
   return response?.data;
 };

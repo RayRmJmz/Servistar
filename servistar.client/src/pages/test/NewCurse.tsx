@@ -17,6 +17,8 @@ import { postCustomerService } from "../../services";
 import LocalPhoneIcon from "@mui/icons-material/LocalPhone";
 import DeleteIcon from "@mui/icons-material/Delete";
 import HomeIcon from "@mui/icons-material/Home";
+import MuiTooltip from "../../components/MuiTooltip/MuiTooltip";
+
 export const NewCourse = () => {
   const {
     register,
@@ -209,16 +211,23 @@ export const ManageCreateAddress = () => {
             sx={{ marginTop: "15px" }}
             key={address.id}
           >
-            <Grid container spacing={2} sx={{ marginTop: "15px" }}>
+            <Grid
+              container
+              spacing={2}
+              sx={{ marginTop: "15px", marginBottom: 2 }}
+            >
               <Grid item container xs={6} sm={6} md={6} lg={6} xl={6}>
-                <button
-                  type="button"
-                  onClick={() => {
-                    remove(addressIndex);
-                  }}
+                <MuiTooltip
+                  messageTooltip={`${LABELS.DELETE} ${LABELS.ADDRESS}`}
                 >
-                  Remove address
-                </button>
+                  <Button
+                    variant="outlined"
+                    startIcon={<DeleteIcon />}
+                    onClick={() => remove(addressIndex)}
+                  >
+                    {LABELS.DELETE}
+                  </Button>
+                </MuiTooltip>
               </Grid>
             </Grid>
 
@@ -226,8 +235,8 @@ export const ManageCreateAddress = () => {
               <Grid item container xs={6} sm={6} md={6} lg={6} xl={6}>
                 <TextField
                   id="numer"
-                  label={LABELS.NUMBER}
-                  placeholder={LABELS.NUMBER}
+                  label={LABELS.HOUSE_NUMBER}
+                  placeholder={LABELS.HOUSE_NUMBER}
                   aria-readonly
                   fullWidth
                   {...register(`address.${addressIndex}.number`)}
@@ -242,7 +251,6 @@ export const ManageCreateAddress = () => {
                   placeholder={LABELS.POSTAL_CODE}
                   aria-readonly
                   fullWidth
-                  type="number"
                   InputLabelProps={{
                     shrink: true,
                   }}

@@ -4,6 +4,15 @@
         <name>Servistar.Server</name>
     </assembly>
     <members>
+        <member name="M:Servistar.Server.Controllers.AppliancesController.GetApplianceById(System.Int32)">
+            <summary>
+            Search appliance by id 
+            </summary>
+            <param name="id">Appliance id </param>
+            <returns>
+            Appliance model
+            </returns>
+        </member>
         <member name="M:Servistar.Server.Controllers.AuthenticationController.Login(Servistar.Server.Models.AuthenticateRequestModel)">
             <summary>
             
@@ -105,6 +114,30 @@
             <inheritdoc />
         </member>
         <member name="M:Servistar.Server.Migrations.brands.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="T:Servistar.Server.Migrations.usersupdate">
+            <inheritdoc />
+        </member>
+        <member name="M:Servistar.Server.Migrations.usersupdate.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:Servistar.Server.Migrations.usersupdate.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:Servistar.Server.Migrations.usersupdate.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="T:Servistar.Server.Migrations.usersupdatetwo">
+            <inheritdoc />
+        </member>
+        <member name="M:Servistar.Server.Migrations.usersupdatetwo.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:Servistar.Server.Migrations.usersupdatetwo.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:Servistar.Server.Migrations.usersupdatetwo.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)">
             <inheritdoc />
         </member>
     </members>

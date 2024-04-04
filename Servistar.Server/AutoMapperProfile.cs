@@ -1,4 +1,5 @@
 ﻿using AutoMapper;
+using Microsoft.AspNetCore.Identity;
 using Servistar.Server.Entities;
 using Servistar.Server.Models;
 using Servistar.Server.Models.Sources;
@@ -13,6 +14,38 @@ namespace Servistar.Server
             SetAppliancesMappings();
             SetCustomersMappings();
             SetBrandsMappings();
+            SetRoleMappings();
+            SetUsersMappings();
+        }
+
+        private void SetUsersMappings()
+        {
+            CreateMap<ApplicationUserEntity, UsersResponseModel>()
+                .ForMember(dest => dest.BirthDate , opt=> opt.MapFrom(src => src.BirthDate.Value.ToString("yyyy-MM-dd")))
+                .ForMember(dest => dest.TerminationDate, opt => opt.MapFrom(src => src.TerminationDate.Value.ToString("yyyy-MM-dd")))
+                .ForMember(dest => dest.StartedDate, opt => opt.MapFrom(src => src.StartedDate.Value.ToString("yyyy-MM-dd")))
+                .AfterMap((src, dest) =>
+                {
+                    if (dest.Roles != null)
+                    {
+                        foreach (var role in dest.Roles)
+                        {
+                            role.Selected = true;
+                        }
+                    }
+                }); ;
+            CreateMap<ApplicationUserEntity, UsersCreateModel>().ReverseMap();
+        }
+
+        private void SetRoleMappings()
+        {
+        //    CreateMap<IdentityRole, RoleViewModel>();
+
+            CreateMap<IdentityRole, RoleResponseModel>()
+               .AfterMap((src, dest) =>
+               {
+                   dest.Selected = true;
+               });
         }
 
         private void SetBrandsMappings()
@@ -43,7 +76,9 @@ namespace Servistar.Server
             CreateMap<CustumersPhoneNumbersEntity, CustomersPhoneNumbersResponseModel>().ReverseMap();
 
             CreateMap<CustomersAddressEntity, CustomerAddressCreateModel>().ReverseMap();
-            CreateMap<CustomersAddressEntity, CustomerAddressResponseModel>().ReverseMap();
+            CreateMap<CustomersAddressEntity, CustomerAddressResponseModel>()
+                .ForMember(dest => dest.Minicipality, opt => opt.MapFrom(src => src.Municipalities.Minicipality))
+                .ReverseMap();
         }
     }
 }
